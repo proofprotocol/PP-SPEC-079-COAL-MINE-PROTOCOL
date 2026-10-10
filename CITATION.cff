@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, cite it as below and attribute Craig Ellrod, Nebulonium, Inc., and Proof Protocol (see NOTICE.md)."
+title: "Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079)"
+version: 0.1.0
+date-released: 2026-10-10
+type: standard
+license: LicenseRef-PPPL-1.0
+keywords:
+  - "proof of performance"
+  - "security product testing"
+  - "independent lab"
+  - "proof of efficacy"
+authors:
+  - family-names: Ellrod
+    given-names: Craig Thomas
+    orcid: "https://orcid.org/0009-0004-1058-7666"
+    affiliation: "Nebulonium, Inc. (dba HACKERverse)"
+references:
+  - type: standard
+    title: "Prooflock: The Dead Canary Protocol (PP-SPEC-077)"
+    version: 0.7.0
+    doi: 10.5281/zenodo.23285061
+    url: "https://github.com/proofprotocol/PP-SPEC-077-DEAD-CANARY-PROTOCOL"
+  - type: standard
+    title: "No Bros Jail Mode Protocol: The Jailed Canary Protocol (PP-SPEC-078)"
+    version: 0.2.0
+    doi: 10.5281/zenodo.23285067
+    url: "https://github.com/proofprotocol/PP-SPEC-078-NO-BROS-JAIL-MODE-PROTOCOL"
+  - type: standard
+    title: "Proof of Performance Specification (PP-SPEC-013)"
+    version: 1.0
+    doi: 10.5281/zenodo.21379780
+  - type: generic
+    title: "Proof Economy Prior Art Declaration"
+    doi: 10.5281/zenodo.21379780

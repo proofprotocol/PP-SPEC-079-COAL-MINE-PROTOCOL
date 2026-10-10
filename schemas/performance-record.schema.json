@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/proofprotocol/PP-SPEC-079-COAL-MINE-PROTOCOL/schemas/performance-record.schema.json",
+  "title": "PP-SPEC-079 Performance Record",
+  "type": "object",
+  "required": ["spec", "version", "engagement_id", "engagement_manifest_uri", "status", "mode", "environment_class", "funding_tier", "sponsor", "runs", "claims", "fingerprints", "summary", "comparability_class", "proofregister_uri", "disclosed_interests"],
+  "properties": {
+    "spec": {"const": "PP-SPEC-079"},
+    "version": {"type": "string"},
+    "engagement_id": {"type": "string"},
+    "engagement_manifest_uri": {"type": "string", "format": "uri"},
+    "status": {"enum": ["complete", "incomplete"]},
+    "mode": {"enum": ["in_situ", "independent_lab"]},
+    "environment_class": {"enum": ["production", "pre-production", "qa", "development", "lab-replica"]},
+    "parity_declaration": {"type": ["object", "null"]},
+    "funding_tier": {"enum": ["vendor_funded", "buyer_funded", "pesa_governed"]},
+    "sponsor": {"type": "string"},
+    "runs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["spec", "run_id", "valid", "result_uri"],
+        "properties": {
+          "spec": {"enum": ["PP-SPEC-077", "PP-SPEC-078", "PP-SPEC-013"]},
+          "run_id": {"type": "string"},
+          "valid": {"type": "boolean"},
+          "commitment_uri": {"type": "string"},
+          "witness_uri": {"type": "string"},
+          "reveal_uri": {"type": "string"},
+          "result_uri": {"type": "string"},
+          "stale": {"type": "boolean"}
+        }
+      }
+    },
+    "efficacy": {"type": "object", "description": "Aggregated from 077 results: rates by level, counts, findings"},
+    "containment": {"type": ["object", "null"], "description": "Aggregated from 078 results"},
+    "operational": {"type": "array", "items": {"type": "object"}, "description": "PP-SPEC-013 records with the run each window overlapped"},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "source", "outcome"],
+        "properties": {
+          "claim": {"type": "string"},
+          "source": {"type": "object", "properties": {"document": {"type": "string"}, "version": {"type": "string"}}},
+          "outcome": {"enum": ["held", "failed", "not_tested"]},
+          "tested_by": {"type": ["string", "null"], "description": "uop_id of the Gold canary or 013 record id"}
+        }
+      }
+    },
+    "fingerprints": {"type": "object", "required": ["start", "end", "molts"], "properties": {"start": {"type": "object"}, "end": {"type": "object"}, "molts": {"type": "array", "items": {"type": "object", "properties": {"declared": {"type": "boolean"}, "pulse": {"type": "string"}, "fingerprint": {"type": "string"}}}}}},
+    "right_of_reply": {"type": ["object", "null"], "properties": {"text": {"type": "string"}, "signature": {"type": "string"}, "t": {"type": "string"}}},
+    "summary": {"type": "string", "description": "One paragraph: what this record proves and what the Parity Declaration prevents it from proving"},
+    "comparability_class": {"type": "object", "required": ["profile", "mine_plan_version", "environment_class", "parity_class"], "properties": {"profile": {"type": "string"}, "mine_plan_version": {"type": "string"}, "environment_class": {"type": "string"}, "parity_class": {"type": "string"}}},
+    "series_state": {"enum": ["live", "stale"]},
+    "proofregister_uri": {"type": "string", "format": "uri"},
+    "disclosed_interests": {"type": "array", "items": {"type": "string"}}
+  }
+}
