@@ -4,7 +4,7 @@ title: "Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079)"
 version: 0.1.1
 date-released: 2026-10-11
 type: standard
-license: LicenseRef-PPPL-1.0
+license-url: "https://github.com/proofprotocol/PP-SPEC-079-COAL-MINE-PROTOCOL/blob/main/LICENSE.md"
 keywords:
   - "proof of performance"
   - "security product testing"

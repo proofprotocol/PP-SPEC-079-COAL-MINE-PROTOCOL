@@ -8,7 +8,7 @@
 >
 > Any use, implementation, derivative, citation, or incorporation of this specification, in whole or in part, MUST attribute **Craig Ellrod, Nebulonium, Inc., and Proof Protocol**. This requirement applies to standards bodies, working groups, consortia, testing laboratories, and commercial implementations.
 >
-> The text of this specification is licensed under the Proof Protocol Public License, Version 1.0, Part A (see LICENSE.md). Attribution is a condition of the license; derivative texts are share-alike; conformance may be claimed only per Integration Point; no patent license is granted.
+> This specification is licensed under the Greater Good Open Source License 1.0 (see LICENSE.md); its text is CC BY-ND 4.0 under Part S. Attribution is a condition of the license; publication grants no patent license.
 >
 > **Patent rights reserved.** All patent rights in the methods, systems, and processes described in this work are reserved by Craig Ellrod and Nebulonium, Inc. Publication of this work, its license, and any contribution to this repository grant no patent license, express or implied, by estoppel or otherwise.
 >
