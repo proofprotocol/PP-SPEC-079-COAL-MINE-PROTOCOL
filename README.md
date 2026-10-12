@@ -20,6 +20,10 @@ For twenty years an Implementor had two ways to find out whether a product worke
 
 The Coal Mine Protocol replaces both, for every control: commercial, open source, custom-built, managed, or platform-native, in legacy security stacks and agentic AI systems alike. The control becomes a Device Under Test inside the Implementor's Solution Under Test. Its efficacy is measured by [PP-SPEC-077](https://github.com/proofprotocol/PP-SPEC-077-DEAD-CANARY-PROTOCOL) (Dead Canary), its containment by [PP-SPEC-078](https://github.com/proofprotocol/PP-SPEC-078-NO-BROS-JAIL-MODE-PROTOCOL) (Jailed Canary), and its operational cost by PP-SPEC-013 (Proof of Performance), all under the same committed, witnessed, anchored runs. The testing equipment is operated by one of two parties, and never by the Provider, whether that is a Provider or the team that built the control.
 
+## How it works
+
+![Coal Mine Protocol: Implementor, Provider, Sponsor, Engagement Manifest, Claim Sheet, Mine Plan, In-Situ and Independent Test Lab modes, forbidden Provider-Run mode, Self-Provided Engagements, Proof Witness, drift segments, Performance Record and Series published to a Registry](docs/coal-mine.svg)
+
 ## Two modes
 
 ```
