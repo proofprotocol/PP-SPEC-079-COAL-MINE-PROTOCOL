@@ -24,7 +24,9 @@ All patent rights in the methods, systems, and processes described in this work 
 
 ## Acknowledgment
 
-None for this specification. The lineage of DUT and SUT is Craig Ellrod, *Technical Marketing* (2008). The independent-lab model this specification replaces was practiced by NSS Labs, ICSA Labs, and others; nothing from their methods is incorporated.
+Tricia Wang and Jim Schwoebel, for the Jail concept and the name "No Bros Jail Mode Protocol". Josh Waldrep (Pipelabs), for early work on a complete agentic AI proof system with receipts and verdicts. See ACKNOWLEDGEMENTS.md.
+
+The lineage of DUT and SUT is Craig Ellrod, *Technical Marketing* (2008). The independent-lab model this specification replaces was practiced by NSS Labs, ICSA Labs, and others; nothing from their methods is incorporated.
 
 ## Prior art
 
