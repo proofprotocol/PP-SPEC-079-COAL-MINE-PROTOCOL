@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+- Proof, not evidence: wherever the text meant what the protocol produces, relies on, accepts, or prices, "evidence" is now "proof". Evidence remains the word for inputs inside a proof record (liveness, cause, differential, verification evidence). Evidence is not proof; proof contains evidence.
+
 ## 0.1.1 (2026-10-11)
 - Role terms: Provider replaces Vendor everywhere (the separate Vendor definition is removed); Implementor replaces Buyer; funding tiers Provider-Funded and Implementor-Funded (`provider_funded`, `implementor_funded`); Engagement Manifest field `implementor`. Environments: Production, Pre-Production, QA, Dev (`dev` replaces `development`), and/or Independent Test Lab (replaces Independent Lab)
 - FUNDING.md funding disclosure ([FUNDED] Yes or No, [FUNDED BY] name and URL per funder); Proof Economy Code of Ethics applies
