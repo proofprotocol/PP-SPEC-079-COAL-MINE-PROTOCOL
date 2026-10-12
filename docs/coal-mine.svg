@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 990" role="img" aria-label="Coal Mine Protocol, PP-SPEC-079: an Implementor commissions an Engagement and publishes an anchored Engagement Manifest; the Provider submits a Claim Sheet and occupies no seam; the Sponsor's funding tier is disclosed; a versioned Mine Plan of PP-SPEC-077, 078 and 013 runs is executed In-Situ in production, pre-production, QA or Dev, or in an Independent Test Lab replica; Provider-Run tests are verification only; Self-Provided Engagements separate the builder team from the testing seams; an out-of-band Proof Witness records outcomes; drift starts a new segment; the Performance Record and Performance Series are published to a Registry, favorable or not, and read by PP-SPEC-080 Acceptance Profiles." font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c9d1d9"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f2cc60"/></marker>
+    <marker id="ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#79c0ff"/></marker>
+  </defs>
+  <rect width="1600" height="990" fill="#0d1117"/>
+
+  <text x="40" y="40" fill="#e6edf3" font-size="20" font-weight="bold">Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079)</text>
+  <text x="40" y="62" fill="#aab3bd">The lab tested the canary in an aviary. The POC let the mine's owner report its own air. CMP sends the canaries down the mine; someone who owns neither reads the result.</text>
+  <rect x="40" y="100" width="260" height="120" rx="6" fill="#161b22" stroke="#9aa4ae" stroke-dasharray="6 4"/>
+  <text x="170" y="124" fill="#e6edf3" font-weight="bold" text-anchor="middle">Sponsor</text>
+  <text x="170" y="142" fill="#aab3bd" text-anchor="middle">pays; tier disclosed</text>
+  <text x="56" y="164" fill="#e6edf3">Provider-Funded,</text>
+  <text x="56" y="180" fill="#e6edf3">Implementor-Funded, or</text>
+  <text x="56" y="196" fill="#e6edf3">PESA-Governed (PP-SPEC-025)</text>
+  <text x="56" y="212" fill="#e6edf3">No seam. Sees nothing early.</text>
+  <rect x="340" y="100" width="300" height="120" rx="6" fill="#161b22" stroke="#79c0ff"/>
+  <text x="490" y="124" fill="#79c0ff" font-weight="bold" text-anchor="middle">Implementor</text>
+  <text x="490" y="142" fill="#aab3bd" text-anchor="middle">operates the SUT, commissions</text>
+  <text x="356" y="164" fill="#e6edf3">publishes the Engagement</text>
+  <text x="356" y="180" fill="#e6edf3">Manifest before the first</text>
+  <text x="356" y="196" fill="#e6edf3">commitment; runs the testing</text>
+  <text x="356" y="212" fill="#e6edf3">equipment or appoints a Lab</text>
+  <rect x="680" y="100" width="300" height="120" rx="6" fill="#161b22" stroke="#9aa4ae" stroke-dasharray="6 4"/>
+  <text x="830" y="124" fill="#e6edf3" font-weight="bold" text-anchor="middle">Provider</text>
+  <text x="830" y="142" fill="#aab3bd" text-anchor="middle">built or operates the control</text>
+  <text x="696" y="164" fill="#e6edf3">commercial, open source, an</text>
+  <text x="696" y="180" fill="#e6edf3">internal team, managed, platform</text>
+  <text x="696" y="196" fill="#e6edf3">native, or a configuration</text>
+  <text x="696" y="212" fill="#e6edf3">Submits a Claim Sheet. No seam.</text>
+  <rect x="1020" y="100" width="260" height="60" rx="6" fill="#161b22" stroke="#c9d1d9"/>
+  <text x="1150" y="124" fill="#e6edf3" font-weight="bold" text-anchor="middle">Time Anchor</text>
+  <text x="1150" y="142" fill="#aab3bd" text-anchor="middle">public beacon. Nobody's.</text>
+  <rect x="1320" y="100" width="240" height="120" rx="6" fill="#161b22" stroke="#c9d1d9"/>
+  <text x="1440" y="124" fill="#e6edf3" font-weight="bold" text-anchor="middle">Registry</text>
+  <text x="1440" y="142" fill="#aab3bd" text-anchor="middle">PP-SPEC-004, proofregister.com</text>
+  <text x="1336" y="164" fill="#e6edf3">every record, good or bad</text>
+  <text x="1336" y="180" fill="#e6edf3">Sovereign Registry inside a</text>
+  <text x="1336" y="196" fill="#e6edf3">regime boundary, cross-</text>
+  <text x="1336" y="212" fill="#e6edf3">anchored outside</text>
+  <polyline points="170,220 170,258" fill="none" stroke="#9aa4ae" stroke-dasharray="4 4" marker-end="url(#a)"/>
+  <text x="178" y="238" fill="#aab3bd">declared in</text>
+  <polyline points="400,220 400,258" fill="none" stroke="#79c0ff" marker-end="url(#ac)"/>
+  <text x="408" y="238" fill="#79c0ff">commissions</text>
+  <polyline points="720,220 720,258" fill="none" stroke="#9aa4ae" marker-end="url(#a)"/>
+  <text x="728" y="238" fill="#aab3bd">submits</text>
+  <polyline points="1150,160 1150,248 460,248 460,300 442,300" fill="none" stroke="#9aa4ae" stroke-dasharray="4 4" marker-end="url(#a)"/>
+  <text x="950" y="242" fill="#aab3bd">binds the manifest hash</text>
+  <rect x="40" y="260" width="400" height="230" rx="6" fill="#161b22" stroke="#79c0ff"/>
+  <text x="240" y="284" fill="#79c0ff" font-weight="bold" text-anchor="middle">Engagement Manifest</text>
+  <text x="240" y="302" fill="#aab3bd" text-anchor="middle">CMP-1:engagement, hashed, anchored</text>
+  <text x="56" y="324" fill="#e6edf3">Engagement Mode, Environment Class</text>
+  <text x="56" y="340" fill="#e6edf3">Parity Declaration hash</text>
+  <text x="56" y="356" fill="#e6edf3">DUT, version, Control Provenance,</text>
+  <text x="56" y="372" fill="#e6edf3">  Provider, self_provided</text>
+  <text x="56" y="388" fill="#e6edf3">Claim Sheet hash</text>
+  <text x="56" y="404" fill="#e6edf3">Mine Plan and its version</text>
+  <text x="56" y="420" fill="#e6edf3">thresholds, Regulatory Regime</text>
+  <text x="56" y="436" fill="#e6edf3">Registry, Holder, extensions</text>
+  <text x="56" y="452" fill="#e6edf3">promise: publish every run</text>
+  <rect x="40" y="520" width="400" height="130" rx="6" fill="#161b22" stroke="#f2cc60"/>
+  <text x="240" y="544" fill="#f2cc60" font-weight="bold" text-anchor="middle">Proof Witness</text>
+  <text x="240" y="562" fill="#aab3bd" text-anchor="middle">out of band, never the Provider</text>
+  <text x="56" y="584" fill="#e6edf3">own path, own credentials; blind to</text>
+  <text x="56" y="600" fill="#e6edf3">labels until its records are</text>
+  <text x="56" y="616" fill="#e6edf3">committed and anchored (077 10)</text>
+  <rect x="480" y="260" width="300" height="120" rx="6" fill="#161b22" stroke="#c9d1d9"/>
+  <text x="630" y="284" fill="#e6edf3" font-weight="bold" text-anchor="middle">Claim Sheet</text>
+  <text x="630" y="302" fill="#aab3bd" text-anchor="middle">the Provider's own words</text>
+  <text x="496" y="324" fill="#e6edf3">every claim about the control</text>
+  <text x="496" y="340" fill="#e6edf3">becomes a Gold canary (077) or</text>
+  <text x="496" y="356" fill="#e6edf3">a Performance Specification</text>
+  <text x="496" y="372" fill="#e6edf3">(013), graded against outcome</text>
+  <rect x="480" y="400" width="300" height="160" rx="6" fill="#161b22" stroke="#c9d1d9"/>
+  <text x="630" y="424" fill="#e6edf3" font-weight="bold" text-anchor="middle">Mine Plan</text>
+  <text x="630" y="442" fill="#aab3bd" text-anchor="middle">committed composition, versioned</text>
+  <text x="496" y="464" fill="#e6edf3">077 Bounded run per Technology</text>
+  <text x="496" y="480" fill="#e6edf3">Profile, 5 colors, Gold per claim</text>
+  <text x="496" y="496" fill="#e6edf3">078 run if the DUT is or guards</text>
+  <text x="496" y="512" fill="#e6edf3">an agent; escape suite run</text>
+  <text x="496" y="528" fill="#e6edf3">013 window during a release</text>
+  <text x="496" y="544" fill="#e6edf3">Production Stream: prod, pre-prod</text>
+  <rect x="480" y="580" width="300" height="140" rx="6" fill="#161b22" stroke="#c9d1d9"/>
+  <text x="630" y="604" fill="#e6edf3" font-weight="bold" text-anchor="middle">Drift</text>
+  <text x="630" y="622" fill="#aab3bd" text-anchor="middle">during the Engagement</text>
+  <text x="496" y="644" fill="#e6edf3">every 077 drift type applies</text>
+  <text x="496" y="660" fill="#e6edf3">declare before applying, or it</text>
+  <text x="496" y="676" fill="#e6edf3">is a finding against its owner</text>
+  <text x="496" y="692" fill="#e6edf3">change = new record segment</text>
+  <polyline points="630,380 630,398" fill="none" stroke="#c9d1d9" marker-end="url(#a)"/>
+  <polyline points="780,480 838,480" fill="none" stroke="#c9d1d9" marker-end="url(#a)"/>
+  <text x="792" y="472" fill="#aab3bd">runs</text>
+  <rect x="820" y="260" width="740" height="330" rx="8" fill="none" stroke="#9aa4ae" stroke-dasharray="6 4"/>
+  <text x="836" y="282" fill="#e6edf3" font-weight="bold">Engagement Modes. The Provider runs neither.</text>
+  <rect x="840" y="300" width="340" height="274" rx="6" fill="#161b22" stroke="#79c0ff"/>
+  <text x="1010" y="324" fill="#79c0ff" font-weight="bold" text-anchor="middle">In-Situ Mode</text>
+  <text x="1010" y="342" fill="#aab3bd" text-anchor="middle">the Implementor's own SUT</text>
+  <text x="856" y="364" fill="#e6edf3">production: non-destructive only,</text>
+  <text x="856" y="380" fill="#e6edf3">  Production Stream, no 078</text>
+  <text x="856" y="396" fill="#e6edf3">pre-production: all classes, 078</text>
+  <text x="856" y="412" fill="#e6edf3">qa: all classes, 078</text>
+  <text x="856" y="428" fill="#e6edf3">dev: all classes, lowest weight</text>
+  <text x="856" y="460" fill="#e6edf3">Parity Declaration for all but</text>
+  <text x="856" y="476" fill="#e6edf3">production: identical, scaled,</text>
+  <text x="856" y="492" fill="#e6edf3">synthetic, or absent</text>
+  <text x="856" y="508" fill="#e6edf3">Witness: Implementor SOC or auditor</text>
+  <rect x="1200" y="300" width="340" height="274" rx="6" fill="#161b22" stroke="#79c0ff"/>
+  <text x="1370" y="324" fill="#79c0ff" font-weight="bold" text-anchor="middle">Independent Test Lab Mode</text>
+  <text x="1370" y="342" fill="#aab3bd" text-anchor="middle">lab-replica, e.g. HACKERverse</text>
+  <text x="1216" y="364" fill="#e6edf3">built from a Parity Declaration</text>
+  <text x="1216" y="380" fill="#e6edf3">or a Reference Environment</text>
+  <text x="1216" y="396" fill="#e6edf3">no network path to Implementor</text>
+  <text x="1216" y="412" fill="#e6edf3">  production systems</text>
+  <text x="1216" y="428" fill="#e6edf3">Lab may run IP-1, 3, 4, 5, 7, 8</text>
+  <text x="1216" y="444" fill="#e6edf3">Witness: another party; if the</text>
+  <text x="1216" y="460" fill="#e6edf3">Lab runs it, the record says so</text>
+  <text x="1216" y="492" fill="#e6edf3">the old lab report, modernized:</text>
+  <text x="1216" y="508" fill="#e6edf3">committed, mutated, published</text>
+  <rect x="820" y="610" width="360" height="140" rx="6" fill="#161b22" stroke="#ff7b72" stroke-dasharray="6 4"/>
+  <text x="1000" y="634" fill="#ff7b72" font-weight="bold" text-anchor="middle">Provider-Run Mode: forbidden</text>
+  <text x="836" y="656" fill="#e6edf3">Provider or its people make canaries,</text>
+  <text x="836" y="672" fill="#e6edf3">hold labels, witness, fingerprint,</text>
+  <text x="836" y="688" fill="#e6edf3">adjudicate, or control publication</text>
+  <text x="836" y="704" fill="#e6edf3">= verification. Never "Proof of</text>
+  <text x="836" y="720" fill="#e6edf3">Performance". Never registered.</text>
+  <rect x="1200" y="610" width="360" height="156" rx="6" fill="#161b22" stroke="#9aa4ae"/>
+  <text x="1380" y="634" fill="#e6edf3" font-weight="bold" text-anchor="middle">Self-Provided Engagement</text>
+  <text x="1380" y="652" fill="#aab3bd" text-anchor="middle">testing what your own team built</text>
+  <text x="1216" y="674" fill="#e6edf3">builder team = Provider</text>
+  <text x="1216" y="690" fill="#e6edf3">testing seams staffed by people</text>
+  <text x="1216" y="706" fill="#e6edf3">with no reporting line to it,</text>
+  <text x="1216" y="722" fill="#e6edf3">or by an external party</text>
+  <text x="1216" y="738" fill="#e6edf3">self_provided: true. Disclosed,</text>
+  <text x="1216" y="754" fill="#e6edf3">not discounted.</text>
+  <rect x="40" y="790" width="1100" height="150" rx="6" fill="#161b22" stroke="#c9d1d9"/>
+  <text x="590" y="814" fill="#e6edf3" font-weight="bold" text-anchor="middle">Performance Record: one per Engagement, published to the Registry</text>
+  <text x="56" y="836" fill="#e6edf3">every run, valid or not | Units of Proof and rates (077) | bookings and verdicts (078) | operational metrics under load (013)</text>
+  <text x="56" y="852" fill="#e6edf3">Claim Sheet graded: held, failed, not tested | fingerprints at start and end, every molt | drift segments | disclosed interests</text>
+  <text x="56" y="868" fill="#e6edf3">Engagement Mode, Environment Class, Parity Declaration, Regulatory Regime, funding tier, the Provider's Right of Reply</text>
+  <text x="56" y="884" fill="#e6edf3">Not a score. Not pass or fail. One paragraph says what it proves, and what the Parity Declaration stops it proving.</text>
+  <rect x="1180" y="790" width="380" height="150" rx="6" fill="#161b22" stroke="#c9d1d9"/>
+  <text x="1370" y="814" fill="#e6edf3" font-weight="bold" text-anchor="middle">Performance Series</text>
+  <text x="1370" y="832" fill="#aab3bd" text-anchor="middle">per DUT, across Engagements</text>
+  <text x="1196" y="854" fill="#e6edf3">comparable only inside one</text>
+  <text x="1196" y="870" fill="#e6edf3">Comparability Class: profile,</text>
+  <text x="1196" y="886" fill="#e6edf3">Mine Plan version, Environment</text>
+  <text x="1196" y="902" fill="#e6edf3">Class, Parity, Regulatory Regime</text>
+  <text x="1196" y="918" fill="#e6edf3">read by PP-SPEC-080 profiles</text>
+  <polyline points="240,650 240,788" fill="none" stroke="#f2cc60" marker-end="url(#ag)"/>
+  <text x="250" y="724" fill="#f2cc60">committed witness records</text>
+  <polyline points="630,720 630,788" fill="none" stroke="#c9d1d9" marker-end="url(#a)"/>
+  <text x="640" y="760" fill="#aab3bd">segments</text>
+  <polyline points="1140,865 1178,865" fill="none" stroke="#c9d1d9" marker-end="url(#a)"/>
+  <polyline points="1560,830 1584,830 1584,160 1562,160" fill="none" stroke="#9aa4ae" stroke-dasharray="4 4" marker-end="url(#a)"/>
+  <text x="40" y="970" fill="#aab3bd">077 measures efficacy. 078 measures containment. 013 measures operational cost under the same load. 079 says who may run them, where, and what must be published.</text>
+</svg>
