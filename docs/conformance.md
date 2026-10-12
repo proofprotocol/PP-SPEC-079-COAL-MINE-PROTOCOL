@@ -34,7 +34,7 @@
 - [ ] Every efficacy or containment claim mapped to a Gold canary; every operational claim to a Performance Specification
 - [ ] Provider supplies the control exactly as deployed and cooperates with independent fingerprinting
 - [ ] Provider occupies no Integration Point and receives nothing before reveal
-- [ ] Provider telemetry attached only as annotation, never as outcome evidence
+- [ ] Provider telemetry attached only as annotation, never as proof of outcome
 - [ ] Right of Reply appended separately, record unaltered
 
 ## Record (SPEC 9)
