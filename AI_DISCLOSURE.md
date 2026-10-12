@@ -63,7 +63,7 @@ The following originated with Craig Ellrod and reflect his judgment, experience,
 - The shift: that the vendor product becomes part of the SUT, DUT, CUT, and AUT, and that its performance is measured by the buyer's infrastructure rather than by the vendor or by a lab the vendor pays.
 - The two engagement modes: in the customer's environment (production, pre-production, QA, development), where the product produces its own efficacy telemetry while it operates; and an independent lab such as HACKERverse performing the same motion with no connection to the customer's live environment.
 - That a vendor-operated test is not proof of performance.
-- The ownership position: sole authorship, Greater Good Commercial License 1.0 (text CC BY-ND 4.0), patent rights reserved, mandatory attribution.
+- The ownership position: sole authorship, Greater Good Commercial License 1.0 (text CC BY 4.0), patent rights reserved, mandatory attribution.
 - All review, acceptance, rejection, and revision direction.
 
 ## AI: Claude (Anthropic)
