@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use or reference this work, cite it as below and attribute Craig Ellrod, Nebulonium, Inc., and Proof Protocol (see NOTICE.md)."
 title: "Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079)"
 version: 0.1.1
+doi: 10.5281/zenodo.23325770
 date-released: 2026-10-11
 type: standard
 license-url: "https://github.com/proofprotocol/PP-SPEC-079-COAL-MINE-PROTOCOL/blob/main/LICENSE.md"
@@ -19,12 +20,12 @@ references:
   - type: standard
     title: "ProofSwarm: The Dead Canary Protocol (PP-SPEC-077)"
     version: 0.7.0
-    doi: 10.5281/zenodo.23285061
+    doi: 10.5281/zenodo.23325759
     url: "https://github.com/proofprotocol/PP-SPEC-077-DEAD-CANARY-PROTOCOL"
   - type: standard
     title: "No Bros Jail Mode Protocol: The Jailed Canary Protocol (PP-SPEC-078)"
     version: 0.2.0
-    doi: 10.5281/zenodo.23285067
+    doi: 10.5281/zenodo.23325766
     url: "https://github.com/proofprotocol/PP-SPEC-078-NO-BROS-JAIL-MODE-PROTOCOL"
   - type: standard
     title: "Proof of Performance Specification (PP-SPEC-013)"
