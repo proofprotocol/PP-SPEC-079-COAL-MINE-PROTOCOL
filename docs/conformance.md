@@ -4,12 +4,12 @@
 
 ## Mode and environment (SPEC 4, 5)
 
-- [ ] Engagement Mode declared: In-Situ or Independent Lab; no Vendor-Run output labeled Proof of Performance
+- [ ] Engagement Mode declared: In-Situ or Independent Test Lab; no Provider-Run output labeled Proof of Performance
 - [ ] Environment Class declared before first commitment; a class change is a new engagement
 - [ ] Parity Declaration published and hashed for every class except production
 - [ ] No destructive canaries or 078 runs in production
-- [ ] Lab replica has no network path to buyer production
-- [ ] Proof Witness is not the Vendor; lab-as-witness disclosed as weakest configuration
+- [ ] Lab replica has no network path to Implementor production
+- [ ] Proof Witness is not the Provider (Provider or internal team); lab-as-witness disclosed as weakest configuration
 
 ## Funding (SPEC 6)
 
@@ -23,18 +23,18 @@
 - [ ] Manifest contains mode, class, parity hash or Reference Environment, DUT and fingerprint capturer, Claim Sheet hash, composition version, Interface Manifest(s), thresholds, publication commitment
 - [ ] At least one 077 Bounded run per claimed technology profile with White, Gray, Red, Black present and Gold for every applicable claim
 - [ ] At least one 078 run with escape suite where the product is, protects, or constrains an agent
-- [ ] At least one 013 measurement window overlapping flock release
+- [ ] At least one 013 measurement window overlapping Proof Swarm release
 - [ ] Production Stream commitment for in-situ production or pre-production
 - [ ] Invalid runs published as invalid; incomplete engagements published as incomplete
 - [ ] Molts declared in advance; undeclared molts recorded as findings
 
-## Vendor (SPEC 8)
+## Provider (SPEC 8)
 
 - [ ] Claim Sheet submitted before manifest commitment, or its absence recorded
 - [ ] Every efficacy or containment claim mapped to a Gold canary; every operational claim to a Performance Specification
-- [ ] Vendor supplies the product as sold and cooperates with independent fingerprinting
-- [ ] Vendor occupies no Integration Point and receives nothing before reveal
-- [ ] Vendor telemetry attached only as annotation, never as outcome evidence
+- [ ] Provider supplies the control exactly as deployed and cooperates with independent fingerprinting
+- [ ] Provider occupies no Integration Point and receives nothing before reveal
+- [ ] Provider telemetry attached only as annotation, never as outcome evidence
 - [ ] Right of Reply appended separately, record unaltered
 
 ## Record (SPEC 9)
@@ -44,3 +44,14 @@
 - [ ] Any report cites the record URI, reproduces the summary verbatim, states no number the record lacks
 - [ ] Series shows class and comparability per entry; live or stale state shown wherever cited
 - [ ] Comparisons stay within one Comparability Class and state it
+
+## Self-Provided and provenance (SPEC 4.4, 9.5.4)
+
+- [ ] Control Provenance and Provider named in the Engagement Manifest; upstream project named for open source controls
+- [ ] Self-Provided Engagements: Issuer, Witness, Fingerprint Capture, and Adjudicator staffed outside the Provider team's reporting line and change responsibility, boundary declared, `self_provided: true` on the record
+- [ ] Provenance and self_provided shown in any side-by-side comparison; never used to adjust a rate
+
+## Authorship Disclosure (SPEC 9.6.9, 077 21.15)
+
+- [ ] Disclosure reference for every component, the Mine Plan composition, and any Reference Environment in the Engagement Manifest
+- [ ] Narrative reports state AI involvement in their first paragraph, next to the Registry URI

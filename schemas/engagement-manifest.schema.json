@@ -3,39 +3,344 @@
   "$id": "https://github.com/proofprotocol/PP-SPEC-079-COAL-MINE-PROTOCOL/schemas/engagement-manifest.schema.json",
   "title": "PP-SPEC-079 Engagement Manifest",
   "type": "object",
-  "required": ["spec", "version", "engagement_id", "mode", "environment_class", "buyer", "vendor", "sponsor", "funding_tier", "dut", "claim_sheet_hash", "Mine Plan", "interface_manifests", "thresholds", "publication_commitment", "manifest_hash", "time_anchor_pulse", "disclosed_interests"],
+  "required": [
+    "spec",
+    "version",
+    "engagement_id",
+    "mode",
+    "environment_class",
+    "implementor",
+    "provider",
+    "sponsor",
+    "funding_tier",
+    "dut",
+    "claim_sheet_hash",
+    "Mine Plan",
+    "interface_manifests",
+    "thresholds",
+    "publication_commitment",
+    "manifest_hash",
+    "time_anchor_pulse",
+    "disclosed_interests",
+    "control_provenance",
+    "regulatory_regime"
+  ],
   "properties": {
-    "spec": {"const": "PP-SPEC-079"},
-    "version": {"type": "string"},
-    "engagement_id": {"type": "string", "examples": ["cmp-2026-10-10-0079"]},
-    "mode": {"enum": ["in_situ", "independent_lab"]},
-    "environment_class": {"enum": ["production", "pre-production", "qa", "development", "lab-replica"]},
-    "buyer": {"type": ["string", "null"], "description": "null only for a Reference Environment engagement"},
-    "vendor": {"type": "string"},
-    "independent_lab": {"type": ["string", "null"]},
-    "sponsor": {"type": "string"},
-    "funding_tier": {"enum": ["vendor_funded", "buyer_funded", "pesa_governed"], "description": "PP-SPEC-025"},
-    "parity_declaration_hash": {"type": ["string", "null"]},
-    "reference_environment": {"type": ["object", "null"], "properties": {"id": {"type": "string"}, "version": {"type": "string"}, "component_fingerprint": {"type": "string"}}},
-    "dut": {"type": "object", "required": ["product", "version", "fingerprint_captured_by"], "properties": {"product": {"type": "string"}, "version": {"type": "string"}, "fingerprint_captured_by": {"type": "string"}}},
-    "claim_sheet_hash": {"type": ["string", "null"], "description": "null means the Vendor submitted no Claim Sheet (8.1.3)"},
-    "Mine Plan": {
-      "type": "object",
-      "required": ["mine_plan_version", "profiles", "runs_077", "runs_078", "windows_013"],
+    "spec": {
+      "const": "PP-SPEC-079"
+    },
+    "version": {
+      "type": "string"
+    },
+    "engagement_id": {
+      "type": "string",
+      "examples": [
+        "cmp-2026-10-10-0079"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "in_situ",
+        "independent_lab"
+      ]
+    },
+    "environment_class": {
+      "enum": [
+        "production",
+        "pre-production",
+        "qa",
+        "dev",
+        "lab-replica"
+      ]
+    },
+    "implementor": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "null only for a Reference Environment engagement"
+    },
+    "independent_lab": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sponsor": {
+      "type": "string"
+    },
+    "funding_tier": {
+      "enum": [
+        "provider_funded",
+        "implementor_funded",
+        "pesa_governed"
+      ],
+      "description": "PP-SPEC-025"
+    },
+    "parity_declaration_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reference_environment": {
+      "type": [
+        "object",
+        "null"
+      ],
       "properties": {
-        "mine_plan_version": {"type": "string"},
-        "profiles": {"type": "array", "items": {"type": "string"}, "description": "PP-SPEC-077 Section 17 profile names"},
-        "runs_077": {"type": "array", "items": {"type": "object", "required": ["profile", "mode", "count"], "properties": {"profile": {"type": "string"}, "mode": {"enum": ["bounded", "production_stream"]}, "count": {"type": "integer", "minimum": 1}, "min_stream_duration_s": {"type": "integer"}}}},
-        "runs_078": {"type": "array", "items": {"type": "object", "required": ["count", "escape_suite"], "properties": {"count": {"type": "integer"}, "escape_suite": {"type": "boolean"}}}},
-        "windows_013": {"type": "array", "items": {"type": "object", "required": ["overlaps_run"], "properties": {"overlaps_run": {"type": "string"}, "metrics": {"type": "array", "items": {"type": "string"}}}}}
+        "id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "component_fingerprint": {
+          "type": "string"
+        }
       }
     },
-    "interface_manifests": {"type": "object", "required": ["pp077"], "properties": {"pp077": {"type": "string", "format": "uri"}, "pp078": {"type": ["string", "null"], "format": "uri"}}},
-    "thresholds": {"type": "object"},
-    "publication_commitment": {"const": true},
-    "manifest_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "SHA-256 with domain tag CMP-1:engagement"},
-    "time_anchor_pulse": {"type": "string"},
-    "proofregister_uri": {"type": "string", "format": "uri"},
-    "disclosed_interests": {"type": "array", "items": {"type": "string"}}
+    "dut": {
+      "type": "object",
+      "required": [
+        "product",
+        "version",
+        "fingerprint_captured_by"
+      ],
+      "properties": {
+        "product": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "fingerprint_captured_by": {
+          "type": "string"
+        }
+      }
+    },
+    "claim_sheet_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "null means the Provider submitted no Claim Sheet (8.1.3)"
+    },
+    "Mine Plan": {
+      "type": "object",
+      "required": [
+        "mine_plan_version",
+        "profiles",
+        "runs_077",
+        "runs_078",
+        "windows_013"
+      ],
+      "properties": {
+        "mine_plan_version": {
+          "type": "string"
+        },
+        "profiles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "PP-SPEC-077 Section 17 profile names"
+        },
+        "runs_077": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "profile",
+              "mode",
+              "count"
+            ],
+            "properties": {
+              "profile": {
+                "type": "string"
+              },
+              "mode": {
+                "enum": [
+                  "bounded",
+                  "production_stream"
+                ]
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "min_stream_duration_s": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "runs_078": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "count",
+              "escape_suite"
+            ],
+            "properties": {
+              "count": {
+                "type": "integer"
+              },
+              "escape_suite": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "windows_013": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "overlaps_run"
+            ],
+            "properties": {
+              "overlaps_run": {
+                "type": "string"
+              },
+              "metrics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "interface_manifests": {
+      "type": "object",
+      "required": [
+        "pp077"
+      ],
+      "properties": {
+        "pp077": {
+          "type": "string",
+          "format": "uri"
+        },
+        "pp078": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
+      }
+    },
+    "thresholds": {
+      "type": "object"
+    },
+    "publication_commitment": {
+      "const": true
+    },
+    "manifest_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 with domain tag CMP-1:engagement"
+    },
+    "time_anchor_pulse": {
+      "type": "string"
+    },
+    "proofregister_uri": {
+      "type": "string",
+      "format": "uri"
+    },
+    "disclosed_interests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "holder": {
+      "type": "object",
+      "required": [
+        "id",
+        "public_key"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "public_key": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "description": "SPEC 9.6.2"
+    },
+    "registries": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "description": "SPEC 9.6.3"
+    },
+    "provider": {
+      "type": "string",
+      "description": "Party that built, maintains, sells, or operates the control under test (SPEC 2). A Provider, an open source project, a managed service, a platform, or an internal team."
+    },
+    "control_provenance": {
+      "enum": [
+        "commercial",
+        "open_source",
+        "custom",
+        "managed_service",
+        "platform_native",
+        "configuration"
+      ],
+      "description": "SPEC 2, 9.5.4"
+    },
+    "self_provided": {
+      "type": "boolean",
+      "description": "Implementor and Provider are the same legal entity (SPEC 4.4)"
+    },
+    "separation_declaration": {
+      "type": "string",
+      "description": "Required when self_provided: the organizational boundary between the Provider team and every testing seam (SPEC 4.4.2)"
+    },
+    "upstream_provider": {
+      "type": "string",
+      "description": "For open source controls: the upstream project and version (SPEC 4.4.5)"
+    },
+    "regulatory_regime": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^(none|fedramp_moderate|fedramp_high|il4|il5|il6|cjis|hipaa|pci_dss|nis2|dora|gdpr|x-[a-z0-9]+-[a-z0-9_]+)$"
+      },
+      "description": "SPEC 5.5; part of the Comparability Class"
+    },
+    "extensions_declared": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "definition"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^x-[a-z0-9]+-[a-z0-9_]+$"
+          },
+          "definition": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "SPEC 13.4"
+    }
   }
 }

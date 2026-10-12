@@ -1,0 +1,70 @@
+{
+  "spec": "PP-SPEC-077:21.15",
+  "work": "PP-SPEC-079 Proof of Performance Engagement: The Coal Mine Protocol",
+  "work_version": "0.1.1",
+  "date": "2026-10-12",
+  "human_authors": [
+    {
+      "name": "Craig Thomas Ellrod",
+      "orcid": "0009-0004-1058-7666",
+      "role": "Author and inventor; conception, direction, every normative decision, review and acceptance"
+    }
+  ],
+  "ai_systems": [
+    {
+      "provider": "Anthropic",
+      "model": "Claude (Fable 5.1, Opus 5.5)",
+      "role": "Drafting, structuring, editing, code"
+    }
+  ],
+  "shares": {
+    "conception_and_normative_decisions": {
+      "human": 80,
+      "ai": 20
+    },
+    "design_and_naming": {
+      "human": 55,
+      "ai": 45,
+      "note": "Claude proposed: Environment Classes, Parity Declaration, Claim Sheet, Comparability Class, the name Coal Mine (after the human rejected Gauntlet), Self-Provided rules, Regulatory Regime axis, Extension Policy table"
+    },
+    "expression": {
+      "human": 5,
+      "ai": 95
+    },
+    "review_and_acceptance": {
+      "human": 100,
+      "ai": 0
+    }
+  },
+  "method": {
+    "kind": "self_estimated",
+    "notes": "Shares drafted by the AI from its itemized record of what it proposed and what the author directed, for the author to confirm or correct before release. MAY be re-measured with a tool such as ProofJack.com."
+  },
+  "contributions": {
+    "human": [
+      "The legacy-model diagnosis: vendor-funded lab reports and vendor-run POCs",
+      "In-Situ versus Independent Lab; vendor-run forbidden",
+      "Rejecting Gauntlet as overused",
+      "Generalizing from vendor products to any control at SUT/DUT/CUT/AUT, any provenance",
+      "Applicability to legacy and agentic environments",
+      "Asking for a government or reserved class and for extension placement rules",
+      "Drift coverage",
+      "All review and acceptance"
+    ],
+    "ai": [
+      "Text as written",
+      "Section structure",
+      "Provider and Control Provenance terms",
+      "4.4 Self-Provided Engagements",
+      "5.5 Regulatory Regime and sovereign Registry",
+      "9.5.5 class versus scale",
+      "Section 13 Extension Policy"
+    ]
+  },
+  "pending_acceptance": [
+    "Regulatory Regime value list",
+    "Extension promotion threshold of three Engagements"
+  ],
+  "supersedes": null,
+  "human_form": "AI_DISCLOSURE.md"
+}

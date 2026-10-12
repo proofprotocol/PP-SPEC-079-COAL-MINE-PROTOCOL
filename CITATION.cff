@@ -1,14 +1,14 @@
 cff-version: 1.2.0
 message: "If you use or reference this work, cite it as below and attribute Craig Ellrod, Nebulonium, Inc., and Proof Protocol (see NOTICE.md)."
 title: "Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079)"
-version: 0.1.0
-date-released: 2026-10-10
+version: 0.1.1
+date-released: 2026-10-11
 type: standard
 license: LicenseRef-PPPL-1.0
 keywords:
   - "proof of performance"
   - "security product testing"
-  - "independent lab"
+  - "Independent Test Lab"
   - "proof of efficacy"
 authors:
   - family-names: Ellrod

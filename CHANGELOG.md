@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.1 (2026-10-11)
+- Role terms: Provider replaces Vendor everywhere (the separate Vendor definition is removed); Implementor replaces Buyer; funding tiers Provider-Funded and Implementor-Funded (`provider_funded`, `implementor_funded`); Engagement Manifest field `implementor`. Environments: Production, Pre-Production, QA, Dev (`dev` replaces `development`), and/or Independent Test Lab (replaces Independent Lab)
+- FUNDING.md funding disclosure ([FUNDED] Yes or No, [FUNDED BY] name and URL per funder); Proof Economy Code of Ethics applies
+- 9.6 Record form and registration: Performance Record and Performance Series are Bundles under PP-SPEC-077 Section 21, with Record ID, envelope, receipt, Comparability Class as a field
+- Holder is the Buyer (or the Independent Lab for Reference Environment Engagements), named in the Engagement Manifest, never the Vendor
+- Engagement Manifest names the accepted Registries; records registered elsewhere are not part of the Engagement
+- An Engagement is complete only at the Registered level; IP-M5 may not assemble from Executed or Conformant runs
+- Disclosure: public by default; In-Situ may use holder_only with the summary, Record ID, receipt, Holder, class, and series state always public
+- Revocation by Issuer, Witness, or Registry; Vendor remedy is Right of Reply
+- Schema: record_id, bundle_root, holder, registries, registry_receipt, disclosure, conformance_level, signatures
+- Builds on 077 v0.7.2 and 078 v0.2.1
+
 ## 0.1.0 (2026-10-10)
 - Initial draft of the Coal Mine Protocol: the engagement layer over PP-SPEC-077, 078, and 013
 - Two Engagement Modes, In-Situ and Independent Lab; Vendor-Run forbidden

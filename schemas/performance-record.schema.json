@@ -3,57 +3,452 @@
   "$id": "https://github.com/proofprotocol/PP-SPEC-079-COAL-MINE-PROTOCOL/schemas/performance-record.schema.json",
   "title": "PP-SPEC-079 Performance Record",
   "type": "object",
-  "required": ["spec", "version", "engagement_id", "engagement_manifest_uri", "status", "mode", "environment_class", "funding_tier", "sponsor", "runs", "claims", "fingerprints", "summary", "comparability_class", "proofregister_uri", "disclosed_interests"],
+  "required": [
+    "spec",
+    "version",
+    "engagement_id",
+    "engagement_manifest_uri",
+    "status",
+    "mode",
+    "environment_class",
+    "funding_tier",
+    "sponsor",
+    "runs",
+    "claims",
+    "fingerprints",
+    "summary",
+    "comparability_class",
+    "proofregister_uri",
+    "disclosed_interests"
+  ],
   "properties": {
-    "spec": {"const": "PP-SPEC-079"},
-    "version": {"type": "string"},
-    "engagement_id": {"type": "string"},
-    "engagement_manifest_uri": {"type": "string", "format": "uri"},
-    "status": {"enum": ["complete", "incomplete"]},
-    "mode": {"enum": ["in_situ", "independent_lab"]},
-    "environment_class": {"enum": ["production", "pre-production", "qa", "development", "lab-replica"]},
-    "parity_declaration": {"type": ["object", "null"]},
-    "funding_tier": {"enum": ["vendor_funded", "buyer_funded", "pesa_governed"]},
-    "sponsor": {"type": "string"},
+    "spec": {
+      "const": "PP-SPEC-079"
+    },
+    "version": {
+      "type": "string"
+    },
+    "engagement_id": {
+      "type": "string"
+    },
+    "engagement_manifest_uri": {
+      "type": "string",
+      "format": "uri"
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "incomplete"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "in_situ",
+        "independent_lab"
+      ]
+    },
+    "environment_class": {
+      "enum": [
+        "production",
+        "pre-production",
+        "qa",
+        "dev",
+        "lab-replica"
+      ]
+    },
+    "parity_declaration": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "funding_tier": {
+      "enum": [
+        "provider_funded",
+        "implementor_funded",
+        "pesa_governed"
+      ]
+    },
+    "sponsor": {
+      "type": "string"
+    },
     "runs": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["spec", "run_id", "valid", "result_uri"],
+        "required": [
+          "spec",
+          "run_id",
+          "valid",
+          "result_uri"
+        ],
         "properties": {
-          "spec": {"enum": ["PP-SPEC-077", "PP-SPEC-078", "PP-SPEC-013"]},
-          "run_id": {"type": "string"},
-          "valid": {"type": "boolean"},
-          "commitment_uri": {"type": "string"},
-          "witness_uri": {"type": "string"},
-          "reveal_uri": {"type": "string"},
-          "result_uri": {"type": "string"},
-          "stale": {"type": "boolean"}
+          "spec": {
+            "enum": [
+              "PP-SPEC-077",
+              "PP-SPEC-078",
+              "PP-SPEC-013"
+            ]
+          },
+          "run_id": {
+            "type": "string"
+          },
+          "valid": {
+            "type": "boolean"
+          },
+          "commitment_uri": {
+            "type": "string"
+          },
+          "witness_uri": {
+            "type": "string"
+          },
+          "reveal_uri": {
+            "type": "string"
+          },
+          "result_uri": {
+            "type": "string"
+          },
+          "stale": {
+            "type": "boolean"
+          }
         }
       }
     },
-    "efficacy": {"type": "object", "description": "Aggregated from 077 results: rates by level, counts, findings"},
-    "containment": {"type": ["object", "null"], "description": "Aggregated from 078 results"},
-    "operational": {"type": "array", "items": {"type": "object"}, "description": "PP-SPEC-013 records with the run each window overlapped"},
+    "efficacy": {
+      "type": "object",
+      "description": "Aggregated from 077 results: rates by level, counts, findings"
+    },
+    "containment": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Aggregated from 078 results"
+    },
+    "operational": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "PP-SPEC-013 records with the run each window overlapped"
+    },
     "claims": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["claim", "source", "outcome"],
+        "required": [
+          "claim",
+          "source",
+          "outcome"
+        ],
         "properties": {
-          "claim": {"type": "string"},
-          "source": {"type": "object", "properties": {"document": {"type": "string"}, "version": {"type": "string"}}},
-          "outcome": {"enum": ["held", "failed", "not_tested"]},
-          "tested_by": {"type": ["string", "null"], "description": "uop_id of the Gold canary or 013 record id"}
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "document": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              }
+            }
+          },
+          "outcome": {
+            "enum": [
+              "held",
+              "failed",
+              "not_tested"
+            ]
+          },
+          "tested_by": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "uop_id of the Gold canary or 013 record id"
+          }
         }
       }
     },
-    "fingerprints": {"type": "object", "required": ["start", "end", "molts"], "properties": {"start": {"type": "object"}, "end": {"type": "object"}, "molts": {"type": "array", "items": {"type": "object", "properties": {"declared": {"type": "boolean"}, "pulse": {"type": "string"}, "fingerprint": {"type": "string"}}}}}},
-    "right_of_reply": {"type": ["object", "null"], "properties": {"text": {"type": "string"}, "signature": {"type": "string"}, "t": {"type": "string"}}},
-    "summary": {"type": "string", "description": "One paragraph: what this record proves and what the Parity Declaration prevents it from proving"},
-    "comparability_class": {"type": "object", "required": ["profile", "mine_plan_version", "environment_class", "parity_class"], "properties": {"profile": {"type": "string"}, "mine_plan_version": {"type": "string"}, "environment_class": {"type": "string"}, "parity_class": {"type": "string"}}},
-    "series_state": {"enum": ["live", "stale"]},
-    "proofregister_uri": {"type": "string", "format": "uri"},
-    "disclosed_interests": {"type": "array", "items": {"type": "string"}}
+    "fingerprints": {
+      "type": "object",
+      "required": [
+        "start",
+        "end",
+        "molts"
+      ],
+      "properties": {
+        "start": {
+          "type": "object"
+        },
+        "end": {
+          "type": "object"
+        },
+        "molts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "declared": {
+                "type": "boolean"
+              },
+              "pulse": {
+                "type": "string"
+              },
+              "fingerprint": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "right_of_reply": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "signature": {
+          "type": "string"
+        },
+        "t": {
+          "type": "string"
+        }
+      }
+    },
+    "summary": {
+      "type": "string",
+      "description": "One paragraph: what this record proves and what the Parity Declaration prevents it from proving"
+    },
+    "comparability_class": {
+      "type": "object",
+      "required": [
+        "profile",
+        "mine_plan_version",
+        "environment_class",
+        "parity_class"
+      ],
+      "properties": {
+        "profile": {
+          "type": "string"
+        },
+        "mine_plan_version": {
+          "type": "string"
+        },
+        "environment_class": {
+          "type": "string"
+        },
+        "parity_class": {
+          "type": "string"
+        }
+      }
+    },
+    "series_state": {
+      "enum": [
+        "live",
+        "stale",
+        "fragmented"
+      ]
+    },
+    "proofregister_uri": {
+      "type": "string",
+      "format": "uri"
+    },
+    "disclosed_interests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "Record ID of this Bundle (077 Section 21.1 under tag DCP-1:record)"
+    },
+    "bundle_root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "Merkle root over the Record IDs of every record in the Engagement (077 Section 21.7)"
+    },
+    "holder": {
+      "type": "object",
+      "required": [
+        "id",
+        "public_key"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "public_key": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Implementor, or Independent Test Lab for a Reference Environment Engagement (SPEC 9.6.2)"
+    },
+    "registries": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "description": "Accepted Registries named in the Engagement Manifest (SPEC 9.6.3)"
+    },
+    "registry_receipt": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "disclosure": {
+      "enum": [
+        "public",
+        "holder_only"
+      ],
+      "description": "SPEC 9.6.5"
+    },
+    "conformance_level": {
+      "const": "registered",
+      "description": "SPEC 9.6.4: a Performance Record exists only at the Registered level"
+    },
+    "signatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "key",
+          "sig"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "issuer",
+              "witness",
+              "holder",
+              "registry",
+              "endorser"
+            ]
+          },
+          "key": {
+            "type": "string"
+          },
+          "sig": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "provider": {
+      "type": "string"
+    },
+    "control_provenance": {
+      "enum": [
+        "commercial",
+        "open_source",
+        "custom",
+        "managed_service",
+        "platform_native",
+        "configuration"
+      ]
+    },
+    "self_provided": {
+      "type": "boolean"
+    },
+    "regulatory_regime": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^(none|fedramp_moderate|fedramp_high|il4|il5|il6|cjis|hipaa|pci_dss|nis2|dora|gdpr|x-[a-z0-9]+-[a-z0-9_]+)$"
+      },
+      "description": "SPEC 5.5; part of the Comparability Class"
+    },
+    "extensions_declared": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "definition"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^x-[a-z0-9]+-[a-z0-9_]+$"
+          },
+          "definition": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "SPEC 13.4"
+    },
+    "drift_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "at",
+          "responsible_party",
+          "declared"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "pattern": "^(control|environment|black_hole|corpus|threat|profile|harness|pigtail|witness|anchor|specification|aut|policy|x-[a-z0-9]+-[a-z0-9_]+)$"
+          },
+          "at": {
+            "type": "string"
+          },
+          "responsible_party": {
+            "type": "string"
+          },
+          "declared": {
+            "type": "boolean"
+          },
+          "from_fingerprint": {
+            "type": "string"
+          },
+          "to_fingerprint": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "SPEC 7.3.4"
+    },
+    "fingerprints_extended": {
+      "type": "object",
+      "properties": {
+        "sut": {
+          "type": "string"
+        },
+        "corpus": {
+          "type": "string"
+        },
+        "pigtail_release": {
+          "type": "string"
+        },
+        "pigtail_witness": {
+          "type": "string"
+        },
+        "interface_manifest": {
+          "type": "string"
+        }
+      },
+      "description": "077 15.2.5 to 15.2.7, 15.7.2"
+    }
   }
 }

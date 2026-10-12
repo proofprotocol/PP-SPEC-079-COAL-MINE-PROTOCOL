@@ -12,16 +12,44 @@ The Coal Mine Protocol, PP-SPEC-079, was conceived, designed, and decided by Cra
 
 ## Ratio
 
-One number would misstate it, because the work splits along more than one line.
-
-| Dimension | Human (Craig Ellrod) | Machine (Claude) |
+| Dimension | Human | AI |
 |---|---|---|
-| Conception, method, every normative decision | 100% | 0% |
-| Design details and naming | 70% | 30% (section structure, Environment Classes, Parity Declaration, Claim Sheet, Comparability Class, the name Coal Mine, proposed by Claude; pending acceptance) |
-| Words on the page, as typed | 5% | 95% |
+| Conception and every normative decision | 80% | 20% |
+| Design details and naming | 55% | 45% (Claude proposed: Environment Classes, Parity Declaration, Claim Sheet, Comparability Class, the name Coal Mine (after the human rejected Gauntlet), Self-Provided rules, Regulatory Regime axis, Extension Policy table) |
+| Words, code, and schemas as written | 5% | 95% |
 | Review, direction, acceptance, decision to publish | 100% | 0% |
 
-In short: substance 85% human, 15% machine pending review; expression 5% human, 95% machine.
+Method: self-estimated. Shares drafted by the AI from its itemized record of what it proposed and what the author directed, for the author to confirm or correct before release. MAY be re-measured with a tool such as ProofJack.com.
+
+Machine-readable form: [ai_disclosure.json](ai_disclosure.json), conforming to PP-SPEC-077 Section 21.15. The two forms agree; if they ever differ, the JSON is wrong and must be corrected.
+
+
+## This version (0.1.1, 2026-10-12)
+
+**Human:**
+- The legacy-model diagnosis: vendor-funded lab reports and vendor-run POCs
+- In-Situ versus Independent Lab; vendor-run forbidden
+- Rejecting Gauntlet as overused
+- Generalizing from vendor products to any control at SUT/DUT/CUT/AUT, any provenance
+- Applicability to legacy and agentic environments
+- Asking for a government or reserved class and for extension placement rules
+- Drift coverage
+- All review and acceptance
+
+**AI:**
+- Text as written
+- Section structure
+- Provider and Control Provenance terms
+- 4.4 Self-Provided Engagements
+- 5.5 Regulatory Regime and sovereign Registry
+- 9.5.5 class versus scale
+- Section 13 Extension Policy
+
+**Proposed by the AI, pending the author's explicit acceptance:**
+- Regulatory Regime value list
+- Extension promotion threshold of three Engagements
+
+AI systems: Anthropic Claude (Fable 5.1, Opus 5.5).
 
 ## Human: Craig Ellrod
 
