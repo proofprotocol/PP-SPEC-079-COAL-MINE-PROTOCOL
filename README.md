@@ -1,5 +1,7 @@
 # Proof of Performance Engagement: The Coal Mine Protocol
 
+![079 Coal Mine Protocol: a canary in a suit with a briefcase in a lit mine tunnel](docs/banner.jpg)
+
 > **Ownership and Attribution Notice**
 >
 > The Coal Mine Protocol (PP-SPEC-079) is authored by **Craig Ellrod** (Nebulonium, Inc., dba HACKERverse) and published as part of **Proof Protocol**. Copyright (c) 2026 Nebulonium, Inc.
