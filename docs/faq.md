@@ -9,6 +9,9 @@ Yes, and CMP keeps the realism. In-Situ Mode runs in your environment. What it r
 **Why can't the Provider run it?**
 Because then it's the product grading its own homework. That's verification (077 Section 3). It has a place; the place is not a Performance Record.
 
+**Can the lab that runs the test also be the witness?**
+No. In Independent Test Lab Mode the Proof Witness must be someone other than the Lab: the Implementor, an auditor, or a second lab (4.2.3). If the Lab, the Issuer, or any operator is tied to the maintainer of this specification or to a holder of its patents, that is disclosed on every record and the witness must have no such tie (4.5).
+
 **Can a Provider still pay for a test?**
 Yes. Provider-Funded Independent Test Lab Mode is permitted. The record says "Provider-Funded" in the title block, the Provider still occupies no seam, and publication is still mandatory. Paying buys a test, not a result.
 

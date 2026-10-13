@@ -36,8 +36,8 @@ The Coal Mine Protocol replaces both, for every control: commercial, open source
                                                Reference Environment.
   Product deployed as sold.                    No path to Implementor production.
   Implementor's infrastructure is the                Lab operates the testing
-  testing equipment. Product                   equipment. Witness SHOULD be
-  emits its own efficacy telemetry             someone other than the lab.
+  testing equipment. Product                   equipment. Witness MUST be
+  emits its own efficacy telemetry             someone other than the Lab.
   while it operates (Production
   Stream, 077 16.2).                           This is the old lab model with
                                                the Provider removed from every
@@ -94,7 +94,7 @@ Proof of Control and Proof of Efficacy are different claims. Proof of Control es
 
 ## Status
 
-Draft, version 0.1.1, 2026-10-11. Maintained by Nebulonium, Inc. as part of Proof Protocol. Builds on PP-SPEC-077 v0.7.2, PP-SPEC-078 v0.2.1, PP-SPEC-013 v1.0, PP-SPEC-006, PP-SPEC-025, PP-SPEC-004.
+Draft, version 0.1.2, 2026-10-13. Maintained by Nebulonium, Inc. as part of Proof Protocol. Builds on PP-SPEC-077 v0.7.2, PP-SPEC-078 v0.2.1, PP-SPEC-013 v1.0, PP-SPEC-006, PP-SPEC-025, PP-SPEC-004.
 
 Archived on Zenodo: v0.1.1, DOI [10.5281/zenodo.23325770](https://doi.org/10.5281/zenodo.23325770). All versions: [10.5281/zenodo.23325769](https://doi.org/10.5281/zenodo.23325769).
 

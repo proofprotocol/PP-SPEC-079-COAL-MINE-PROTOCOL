@@ -17,8 +17,8 @@
 | Field | Value |
 |---|---|
 | Spec ID | PP-SPEC-079 |
-| Version | 0.1.1 (Draft) |
-| Date | 2026-10-12 |
+| Version | 0.1.2 (Draft) |
+| Date | 2026-10-13 |
 | Status | Draft for public record |
 | Maintainer | Nebulonium, Inc. (Proof Protocol) |
 | Builds on | PP-SPEC-077 v0.7.2 (Dead Canary), PP-SPEC-078 v0.2.1 (Jailed Canary), PP-SPEC-013 v1.0 (Proof of Performance), PP-SPEC-006 (Proof of Efficacy Score), PP-SPEC-025 (Funding Tier Disclosure), PP-SPEC-004 (ProofRegister API) |
@@ -29,7 +29,7 @@
 
 For twenty years an Implementor had two ways to learn whether a product worked. An independent laboratory, paid by the Provider, ran a fixed suite of attacks in the laboratory's own environment and published a report. Or the Provider ran a proof of concept inside the Implementor's environment, operated by the Provider's own engineers, and reported what the Provider's console showed. The first was comparable but unreal and Provider-funded. The second was realistic but self-attested and unrepeatable. Neither produced proof.
 
-The Coal Mine Protocol replaces both, and it applies to every control, not only the ones that are sold. A commercial product, an open source project, a control an internal team built, a managed service, a cloud platform's native guardrail, or a configuration someone wrote on a Tuesday: each becomes a Device Under Test inside a Solution Under Test, and its performance is measured by testing equipment that whoever built or operates it does not touch: the committed, witnessed, anchored runs of PP-SPEC-077 for efficacy, PP-SPEC-078 for agent containment, and PP-SPEC-013 for operational performance under the same load. The testing equipment is operated in one of two places. **In-Situ Mode**: the Implementor's own infrastructure, in Production, Pre-Production, QA, or Dev, where the product produces its own efficacy telemetry while it operates. **Independent Test Lab Mode**: a laboratory, such as HACKERverse, that performs the same motion in a replica environment never connected to the Implementor's live systems. In both, the output is not a report but a Performance Record: Units of Proof, rates, findings, and the Provider's own written claims graded against outcome, published to a Registry.
+The Coal Mine Protocol replaces both, and it applies to every control, not only the ones that are sold. A commercial product, an open source project, a control an internal team built, a managed service, a cloud platform's native guardrail, or a configuration someone wrote on a Tuesday: each becomes a Device Under Test inside a Solution Under Test, and its performance is measured by testing equipment that whoever built or operates it does not touch: the committed, witnessed, anchored runs of PP-SPEC-077 for efficacy, PP-SPEC-078 for agent containment, and PP-SPEC-013 for operational performance under the same load. The testing equipment is operated in one of two places. **In-Situ Mode**: the Implementor's own infrastructure, in Production, Pre-Production, QA, or Dev, where the product produces its own efficacy telemetry while it operates. **Independent Test Lab Mode**: an Independent Test Lab that performs the same motion in a replica environment never connected to the Implementor's live systems. In both, the output is not a report but a Performance Record: Units of Proof, rates, findings, and the Provider's own written claims graded against outcome, published to a Registry.
 
 A test operated by the party that built or runs the control is verification, whether that party is a Provider's sales engineer or the Implementor's own platform team. It is not a Coal Mine Protocol Engagement, and its results MUST NOT be called Proof of Performance.
 
@@ -158,7 +158,7 @@ Both legacy models are stories about Providers because, until now, only Provider
 
 4.2.2. The replica MUST have no network path to any Implementor production system. Liveness, egress sinks, and Effect Points are the Lab's.
 
-4.2.3. The Lab MAY occupy IP-1, IP-3, IP-4, IP-5, IP-7, and IP-8. The Proof Witness (IP-6) SHOULD be a party other than the Lab: the Implementor, an auditor, or a second laboratory. Where the Lab also operates IP-6, the Performance Record MUST say so, and this is the weakest conforming configuration (077 docs/faq, "Can the test operator also run the Proof Witness?").
+4.2.3. The Lab MAY occupy IP-1, IP-3, IP-4, IP-5, IP-7, and IP-8. The Proof Witness (IP-6) MUST be a party other than the Lab and its affiliates: the Implementor, an auditor, or a second laboratory. An Engagement in which the Lab operates IP-6 is not a Coal Mine Protocol Engagement, and its results MUST NOT be published as a Performance Record.
 
 4.2.4. Independent Test Lab Mode is the modernized form of legacy model A. What changes: the attack set is committed and mutated, the Provider's claims are graded, publication is mandatory, and the Sponsor has no seam.
 
@@ -181,6 +181,14 @@ Both legacy models are stories about Providers because, until now, only Provider
 4.4.4. Self-Provided records are in the same Comparability Class as any other record produced under the same Mine Plan, Environment Class, and Parity Declaration. The flag is for disclosure, not for discounting. A reader who wants to weight it may; the record does not.
 
 4.4.5. Open source controls are Provider-provided by their maintainers and Self-Provided by whoever configured and deployed them. The Engagement Manifest MUST name both: the upstream project and version as the Provider of the control, and the deploying team as the Provider of the configuration, each under its own Fingerprint (077 15.2).
+
+### 4.5. Maintainer and Licensor Independence
+
+4.5.1. Where the Independent Test Lab, the Issuer, or the operator of any Integration Point is the maintainer of this specification, a holder of patent claims that read on it, or an affiliate of either, the Engagement Manifest and every record the Engagement produces MUST state that relationship in `disclosed_interests` (6.5).
+
+4.5.2. In such an Engagement, the Proof Witness MUST be a party with none of the relationships in 4.5.1.
+
+4.5.3. This specification names, prefers, and requires no operator.
 
 ## 5. Environment Classes and Parity
 
@@ -454,7 +462,7 @@ Multi-Provider bake-offs within one Engagement and Implementor consortia sharing
 
 ## 14. Interpretation
 
-Nebulonium, Inc., as maintainer of Proof Protocol, reserves final interpretive discretion over this specification and over conformance claims made under it.
+Nebulonium, Inc., as maintainer of Proof Protocol, is responsible for the editorial text of this specification. Whether an Engagement or record conforms is determined from its records against the normative text, and is not decided by the maintainer.
 
 ## Revision History
 
@@ -462,3 +470,4 @@ Nebulonium, Inc., as maintainer of Proof Protocol, reserves final interpretive d
 |---|---|---|
 | 0.1.0 | 2026-10-10 | Initial draft. Engagement layer over PP-SPEC-077, 078, and 013: In-Situ and Independent Lab modes, Provider-Run forbidden, Environment Classes and Parity Declarations, funding per PP-SPEC-025, Engagement Manifest with `CMP-1:engagement` tag, Claim Sheet to Gold canaries, Provider duties, prohibitions, and Right of Reply, Performance Record and Series, Comparability Class, IP-M1 to IP-M5. |
 | 0.1.1 | 2026-10-12 | Shared family problem statement at the top of the Introduction. Flock renamed Proof Swarm, following PP-SPEC-077 v0.7.2. 9.6.9 Authorship Disclosure (077 21.15) for components, compositions, Reference Environments, and reports. 9.6.8 humans and machines (077 21.14). 7.3.4 drift during an Engagement covering every 077 15.1 type with the responsible party for each; Performance Record and Series carry SUT, Corpus, Pigtail, and Component Fingerprints and segments; `fragmented` series state. 5.5 Regulatory Regime (declared, in the Comparability Class, sovereign Registry with cross-anchoring); 9.5.5 class versus scale; Section 13 Extension Policy (extension points, what is not extensible, add never relax, declare or it did not happen, Providers, promotion) binding 077 and 078; 2.1 and 13.7 point consumer requirements at PP-SPEC-080. Generalized from vendor products to controls of any provenance: Provider replaces Vendor as the constrained party (Vendor kept only for the commercial case), Control Provenance recorded, 4.4 Self-Provided Engagements with team separation rules, 9.5.4 provenance never affects comparability, Claim Sheet sources widened to READMEs, design documents, runbooks, and policies. Added the Introduction (why this specification exists, scope, what it is not). 9.6 Record form and registration: the Performance Record and the Performance Series are Bundles under 077 Section 21; Holder is the Buyer or the Independent Lab, never the Provider; Engagement Manifest names accepted Registries and the Holder; an Engagement is complete only at the Registered level; Disclosure Level with public summary; revocation. Builds on 077 v0.7.2 and 078 v0.2.1. |
+| 0.1.2 | 2026-10-13 | 4.2.3: the Proof Witness MUST be independent of the Lab and its affiliates; a Lab-operated witness no longer conforms. 4.5 Maintainer and Licensor Independence: disclosure of maintainer, patent-holder, or affiliate relationships, and an unrelated Proof Witness in those Engagements; the specification names, prefers, and requires no operator. Abstract no longer names an operator. Section 14 limited to editorial responsibility; conformance is determined from the records. |

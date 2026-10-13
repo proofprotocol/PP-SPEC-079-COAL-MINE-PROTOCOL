@@ -1,6 +1,11 @@
 # Changelog
 
-## Unreleased
+## 0.1.2 (2026-10-13)
+- 4.2.3: Proof Witness MUST be independent of the Lab and its affiliates; Lab-operated witness no longer conforms
+- 4.5 Maintainer and Licensor Independence: maintainer, patent-holder, and affiliate relationships disclosed in `disclosed_interests`; such Engagements use an unrelated Proof Witness; no operator named, preferred, or required
+- Abstract no longer names an operator
+- Section 14: maintainer responsible for editorial text only; conformance determined from the records
+- CONTRIBUTING.md, docs/conformance.md, and docs/faq.md updated to match
 - Proof, not evidence: wherever the text meant what the protocol produces, relies on, accepts, or prices, "evidence" is now "proof". Evidence remains the word for inputs inside a proof record (liveness, cause, differential, verification evidence). Evidence is not proof; proof contains evidence.
 
 ## 0.1.1 (2026-10-11)

@@ -9,7 +9,9 @@
 - [ ] Parity Declaration published and hashed for every class except production
 - [ ] No destructive canaries or 078 runs in production
 - [ ] Lab replica has no network path to Implementor production
-- [ ] Proof Witness is not the Provider (Provider or internal team); lab-as-witness disclosed as weakest configuration
+- [ ] Proof Witness is not the Provider (Provider or internal team)
+- [ ] In Independent Test Lab Mode, Proof Witness is not the Lab or its affiliates
+- [ ] Maintainer, patent-holder, and affiliate relationships of the Lab, Issuer, or any Integration Point operator disclosed; Proof Witness in such an Engagement has none of them
 
 ## Funding (SPEC 6)
 
