@@ -20,12 +20,12 @@ references:
   - type: standard
     title: "ProofSwarm: The Dead Canary Protocol (PP-SPEC-077)"
     version: 0.7.0
-    doi: 10.5281/zenodo.23325759
+    doi: 10.5281/zenodo.23285060
     url: "https://github.com/proofprotocol/PP-SPEC-077-DEAD-CANARY-PROTOCOL"
   - type: standard
     title: "No Bros Jail Mode Protocol: The Jailed Canary Protocol (PP-SPEC-078)"
     version: 0.2.0
-    doi: 10.5281/zenodo.23325766
+    doi: 10.5281/zenodo.23285066
     url: "https://github.com/proofprotocol/PP-SPEC-078-NO-BROS-JAIL-MODE-PROTOCOL"
   - type: standard
     title: "Proof of Performance Specification (PP-SPEC-013)"
