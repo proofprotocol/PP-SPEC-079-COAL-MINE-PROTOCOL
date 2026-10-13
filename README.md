@@ -96,13 +96,13 @@ Proof of Control and Proof of Efficacy are different claims. Proof of Control es
 
 Draft, version 0.1.3, 2026-10-13. Maintained by Nebulonium, Inc. as part of Proof Protocol. Builds on PP-SPEC-077 v0.7.2, PP-SPEC-078 v0.2.1, PP-SPEC-013 v1.0, PP-SPEC-006, PP-SPEC-025, PP-SPEC-004.
 
-Archived on Zenodo: v0.1.1, DOI [10.5281/zenodo.23325770](https://doi.org/10.5281/zenodo.23325770). All versions: [10.5281/zenodo.23325769](https://doi.org/10.5281/zenodo.23325769).
+Archived on Zenodo: v0.1.3, DOI [10.5281/zenodo.23347697](https://doi.org/10.5281/zenodo.23347697). All versions: [10.5281/zenodo.23325769](https://doi.org/10.5281/zenodo.23325769).
 
 Related: Proof Economy Prior Art Declaration, DOI [10.5281/zenodo.21379780](https://doi.org/10.5281/zenodo.21379780).
 
 ## Cite
 
 ```
-Ellrod, C. (2026). Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079), v0.1.1.
-Nebulonium, Inc., Proof Protocol. https://doi.org/10.5281/zenodo.23325770
+Ellrod, C. (2026). Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079), v0.1.3.
+Nebulonium, Inc., Proof Protocol. https://doi.org/10.5281/zenodo.23347697
 ```
