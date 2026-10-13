@@ -55,7 +55,8 @@
       "Asking for a government or reserved class and for extension placement rules",
       "Drift coverage",
       "All review and acceptance",
-      "0.1.2: decision to make witness independence from the Lab mandatory, remove the named operator, and limit the maintainer to editorial responsibility, in response to the Open Verification Lab leadership question on operator independence"
+      "0.1.2: decision to make witness independence from the Lab mandatory, remove the named operator, and limit the maintainer to editorial responsibility, in response to the Open Verification Lab leadership question on operator independence",
+      "0.1.2: accepted the Section 14 wording (maintainer editorial only; conformance from the records)"
     ],
     "ai": [
       "Text as written",
@@ -70,8 +71,7 @@
   },
   "pending_acceptance": [
     "Regulatory Regime value list",
-    "Extension promotion threshold of three Engagements",
-    "0.1.2 Section 14 wording (maintainer editorial only; conformance from the records)"
+    "Extension promotion threshold of three Engagements"
   ],
   "supersedes": null,
   "human_form": "AI_DISCLOSURE.md"

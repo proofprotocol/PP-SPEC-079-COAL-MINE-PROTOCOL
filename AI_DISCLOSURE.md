@@ -28,14 +28,12 @@ Machine-readable form: [ai_disclosure.json](ai_disclosure.json), conforming to P
 
 **Human:**
 - Decision to make Proof Witness independence from the Lab mandatory, remove the named operator, and limit the maintainer to editorial responsibility, in response to the Open Verification Lab leadership question on operator independence
+- Accepted the Section 14 wording (maintainer editorial only; conformance from the records)
 - All review and acceptance
 
 **AI:**
 - Identified the independence gaps by reviewing 079 against that question
 - Text of 4.2.3, 4.5, and Section 14, and the matching changelog, FAQ, and conformance entries
-
-**Proposed by the AI, pending the author's explicit acceptance:**
-- Section 14 wording (maintainer editorial only; conformance from the records)
 
 ## Version 0.1.1 (2026-10-12)
 
