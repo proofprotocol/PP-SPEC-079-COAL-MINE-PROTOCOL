@@ -1,7 +1,7 @@
 {
   "spec": "PP-SPEC-077:21.15",
   "work": "PP-SPEC-079 Proof of Performance Engagement: The Coal Mine Protocol",
-  "work_version": "0.1.2",
+  "work_version": "0.1.3",
   "date": "2026-10-13",
   "human_authors": [
     {
@@ -56,7 +56,8 @@
       "Drift coverage",
       "All review and acceptance",
       "0.1.2: decision to make witness independence from the Lab mandatory, remove the named operator, and limit the maintainer to editorial responsibility, in response to the Open Verification Lab leadership question on operator independence",
-      "0.1.2: accepted the Section 14 wording (maintainer editorial only; conformance from the records)"
+      "0.1.2: accepted the Section 14 wording (maintainer editorial only; conformance from the records)",
+      "0.1.3: decision to remove remaining maintainer powers from 13.6 and 13.7"
     ],
     "ai": [
       "Text as written",
@@ -66,7 +67,8 @@
       "5.5 Regulatory Regime and sovereign Registry",
       "9.5.5 class versus scale",
       "Section 13 Extension Policy",
-      "0.1.2: identified the independence gaps by reviewing 079 against that question; drafted the text of 4.2.3, 4.5, Section 14, and the matching changelog, FAQ, and conformance entries"
+      "0.1.2: identified the independence gaps by reviewing 079 against that question; drafted the text of 4.2.3, 4.5, Section 14, and the matching changelog, FAQ, and conformance entries",
+      "0.1.3: text of the 13.6 and 13.7 changes"
     ]
   },
   "pending_acceptance": [

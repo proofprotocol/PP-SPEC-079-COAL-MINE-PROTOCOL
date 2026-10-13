@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 (2026-10-13)
+- 13.6: extensions adopted by a specification revision published for public review, not by the maintainer; Lineage Node sentence made informative
+- 13.7: reserved items no longer reserved to the maintainer
+
 ## 0.1.2 (2026-10-13)
 - 4.2.3: Proof Witness MUST be independent of the Lab and its affiliates; Lab-operated witness no longer conforms
 - 4.5 Maintainer and Licensor Independence: maintainer, patent-holder, and affiliate relationships disclosed in `disclosed_interests`; such Engagements use an unrelated Proof Witness; no operator named, preferred, or required

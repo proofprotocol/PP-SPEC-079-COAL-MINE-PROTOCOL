@@ -24,7 +24,16 @@ Method: self-estimated. Shares drafted by the AI from its itemized record of wha
 Machine-readable form: [ai_disclosure.json](ai_disclosure.json), conforming to PP-SPEC-077 Section 21.15. The two forms agree; if they ever differ, the JSON is wrong and must be corrected.
 
 
-## This version (0.1.2, 2026-10-13)
+## This version (0.1.3, 2026-10-13)
+
+**Human:**
+- Decision to remove remaining maintainer powers from 13.6 and 13.7
+- All review and acceptance
+
+**AI:**
+- Text of the 13.6 and 13.7 changes
+
+## Version 0.1.2 (2026-10-13)
 
 **Human:**
 - Decision to make Proof Witness independence from the Lab mandatory, remove the named operator, and limit the maintainer to editorial responsibility, in response to the Open Verification Lab leadership question on operator independence

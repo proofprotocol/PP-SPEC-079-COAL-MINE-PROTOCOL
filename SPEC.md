@@ -17,7 +17,7 @@
 | Field | Value |
 |---|---|
 | Spec ID | PP-SPEC-079 |
-| Version | 0.1.2 (Draft) |
+| Version | 0.1.3 (Draft) |
 | Date | 2026-10-13 |
 | Status | Draft for public record |
 | Maintainer | Nebulonium, Inc. (Proof Protocol) |
@@ -454,11 +454,13 @@ A Provider's place is the Integration Points and the `extensions.<provider>` obj
 
 ### 13.6. Promotion
 
-An `x-` value, profile, composition, or vector that three independent Engagements have declared MAY be proposed for adoption. The maintainer adopts it by specification revision and drops the prefix. Where the proposer holds a Greater Good License Section E Lineage Node for it, adoption recognizes that node.
+An `x-` value, profile, composition, or vector that three independent Engagements have declared MAY be proposed for adoption. It is adopted by a specification revision published for public review, and the prefix is dropped.
+
+*Informative:* where the proposer holds a Greater Good License Section E Lineage Node for an adopted item, adoption recognizes that node.
 
 ### 13.7. Reserved
 
-Multi-Provider bake-offs within one Engagement and Implementor consortia sharing a Mine Plan remain reserved for future revisions by the maintainer. Consumer-side requirements are PP-SPEC-080, not a revision of this specification.
+Multi-Provider bake-offs within one Engagement and Implementor consortia sharing a Mine Plan remain reserved for future revisions. Consumer-side requirements are PP-SPEC-080, not a revision of this specification.
 
 ## 14. Interpretation
 
@@ -471,3 +473,4 @@ Nebulonium, Inc., as maintainer of Proof Protocol, is responsible for the editor
 | 0.1.0 | 2026-10-10 | Initial draft. Engagement layer over PP-SPEC-077, 078, and 013: In-Situ and Independent Lab modes, Provider-Run forbidden, Environment Classes and Parity Declarations, funding per PP-SPEC-025, Engagement Manifest with `CMP-1:engagement` tag, Claim Sheet to Gold canaries, Provider duties, prohibitions, and Right of Reply, Performance Record and Series, Comparability Class, IP-M1 to IP-M5. |
 | 0.1.1 | 2026-10-12 | Shared family problem statement at the top of the Introduction. Flock renamed Proof Swarm, following PP-SPEC-077 v0.7.2. 9.6.9 Authorship Disclosure (077 21.15) for components, compositions, Reference Environments, and reports. 9.6.8 humans and machines (077 21.14). 7.3.4 drift during an Engagement covering every 077 15.1 type with the responsible party for each; Performance Record and Series carry SUT, Corpus, Pigtail, and Component Fingerprints and segments; `fragmented` series state. 5.5 Regulatory Regime (declared, in the Comparability Class, sovereign Registry with cross-anchoring); 9.5.5 class versus scale; Section 13 Extension Policy (extension points, what is not extensible, add never relax, declare or it did not happen, Providers, promotion) binding 077 and 078; 2.1 and 13.7 point consumer requirements at PP-SPEC-080. Generalized from vendor products to controls of any provenance: Provider replaces Vendor as the constrained party (Vendor kept only for the commercial case), Control Provenance recorded, 4.4 Self-Provided Engagements with team separation rules, 9.5.4 provenance never affects comparability, Claim Sheet sources widened to READMEs, design documents, runbooks, and policies. Added the Introduction (why this specification exists, scope, what it is not). 9.6 Record form and registration: the Performance Record and the Performance Series are Bundles under 077 Section 21; Holder is the Buyer or the Independent Lab, never the Provider; Engagement Manifest names accepted Registries and the Holder; an Engagement is complete only at the Registered level; Disclosure Level with public summary; revocation. Builds on 077 v0.7.2 and 078 v0.2.1. |
 | 0.1.2 | 2026-10-13 | 4.2.3: the Proof Witness MUST be independent of the Lab and its affiliates; a Lab-operated witness no longer conforms. 4.5 Maintainer and Licensor Independence: disclosure of maintainer, patent-holder, or affiliate relationships, and an unrelated Proof Witness in those Engagements; the specification names, prefers, and requires no operator. Abstract no longer names an operator. Section 14 limited to editorial responsibility; conformance is determined from the records. |
+| 0.1.3 | 2026-10-13 | 13.6: an extension is adopted by a specification revision published for public review, not by the maintainer; the Greater Good License Lineage Node sentence is informative. 13.7: reserved items no longer reserved to the maintainer. |
