@@ -1,4 +1,4 @@
-# Patent Schedule (GGL Part P)
+# Patent Schedule (Proof Protocol License 1.0 Part P)
 
 Covered Work: PP-SPEC-079, Proof of Performance Engagement: The Coal Mine Protocol, version 0.1.3
 Schedule version: 1, published 2026-10-12

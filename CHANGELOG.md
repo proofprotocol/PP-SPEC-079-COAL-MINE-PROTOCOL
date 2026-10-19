@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-19
+
+- Adopted the Proof Protocol License 1.0 (LICENSE.md). Specifications: Apache-2.0. Software: proprietary.
+- Added ETHICS.md (Proof Economy Code of Ethics).
+- All prior versions of the specifications are relicensed under Apache-2.0 (see NOTICE.md).
+
 ## 0.1.3 (2026-10-13)
 - 13.6: extensions adopted by a specification revision published for public review, not by the maintainer; Lineage Node sentence made informative
 - 13.7: reserved items no longer reserved to the maintainer

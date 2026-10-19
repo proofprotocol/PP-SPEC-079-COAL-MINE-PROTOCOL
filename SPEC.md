@@ -8,7 +8,7 @@
 >
 > Any use, implementation, derivative, citation, or incorporation of this specification, in whole or in part, MUST attribute **Craig Ellrod, Nebulonium, Inc., and Proof Protocol**. This requirement applies to standards bodies, working groups, consortia, testing laboratories, and commercial implementations.
 >
-> This specification is licensed under the Greater Good Commercial License 1.0 (see LICENSE.md); text CC BY 4.0 under its Part S. Original inventor: Craig Thomas Ellrod (ORCID 0009-0004-1058-7666).
+> This specification is licensed under the Proof Protocol License 1.0 (see LICENSE.md); text Apache License 2.0 under Part A. Original inventor: Craig Thomas Ellrod (ORCID 0009-0004-1058-7666).
 >
 > **Patents.** Patent terms are in [PATENT-SCHEDULE.md](PATENT-SCHEDULE.md). Claims not listed there are reserved by Craig Ellrod and Nebulonium, Inc. Licensing: 1proofprotocol@gmail.com.
 >
@@ -434,7 +434,7 @@ This section says where the specifications in this family may be extended, by wh
 | Reference Environments (5.4) | Independent Labs, sector bodies | Publish with Component Fingerprint to the Registry | Defines its own class |
 | Escape vectors (078 Section 13) | Containment researchers, Providers | `x-` vectors added to the suite; ES-01 to ES-09 stay mandatory | Reported separately from the mandatory nine |
 | Pithead Safety and Acceptance Protocol (PP-SPEC-080) | Insurers, regulators, Implementors, sector bodies | Publish a profile; a profile never changes a record, only whether a reader accepts it | None |
-| Enrichments (Greater Good License Section E) | Anyone adding a method, profile, suite, or text | Lineage Node, countersigned by the root | Governed by the license, not by this section |
+| Enrichments (Proof Protocol License 1.0 Section E) | Anyone adding a method, profile, suite, or text | Lineage Node, countersigned by the root | Governed by the license, not by this section |
 
 ### 13.2. What is not extensible
 
@@ -456,7 +456,7 @@ A Provider's place is the Integration Points and the `extensions.<provider>` obj
 
 An `x-` value, profile, composition, or vector that three independent Engagements have declared MAY be proposed for adoption. It is adopted by a specification revision published for public review, and the prefix is dropped.
 
-*Informative:* where the proposer holds a Greater Good License Section E Lineage Node for an adopted item, adoption recognizes that node.
+*Informative:* where the proposer holds a Proof Protocol License 1.0 Section E Lineage Node for an adopted item, adoption recognizes that node.
 
 ### 13.7. Reserved
 
@@ -473,4 +473,4 @@ Nebulonium, Inc., as maintainer of Proof Protocol, is responsible for the editor
 | 0.1.0 | 2026-10-10 | Initial draft. Engagement layer over PP-SPEC-077, 078, and 013: In-Situ and Independent Lab modes, Provider-Run forbidden, Environment Classes and Parity Declarations, funding per PP-SPEC-025, Engagement Manifest with `CMP-1:engagement` tag, Claim Sheet to Gold canaries, Provider duties, prohibitions, and Right of Reply, Performance Record and Series, Comparability Class, IP-M1 to IP-M5. |
 | 0.1.1 | 2026-10-12 | Shared family problem statement at the top of the Introduction. Flock renamed Proof Swarm, following PP-SPEC-077 v0.7.2. 9.6.9 Authorship Disclosure (077 21.15) for components, compositions, Reference Environments, and reports. 9.6.8 humans and machines (077 21.14). 7.3.4 drift during an Engagement covering every 077 15.1 type with the responsible party for each; Performance Record and Series carry SUT, Corpus, Pigtail, and Component Fingerprints and segments; `fragmented` series state. 5.5 Regulatory Regime (declared, in the Comparability Class, sovereign Registry with cross-anchoring); 9.5.5 class versus scale; Section 13 Extension Policy (extension points, what is not extensible, add never relax, declare or it did not happen, Providers, promotion) binding 077 and 078; 2.1 and 13.7 point consumer requirements at PP-SPEC-080. Generalized from vendor products to controls of any provenance: Provider replaces Vendor as the constrained party (Vendor kept only for the commercial case), Control Provenance recorded, 4.4 Self-Provided Engagements with team separation rules, 9.5.4 provenance never affects comparability, Claim Sheet sources widened to READMEs, design documents, runbooks, and policies. Added the Introduction (why this specification exists, scope, what it is not). 9.6 Record form and registration: the Performance Record and the Performance Series are Bundles under 077 Section 21; Holder is the Buyer or the Independent Lab, never the Provider; Engagement Manifest names accepted Registries and the Holder; an Engagement is complete only at the Registered level; Disclosure Level with public summary; revocation. Builds on 077 v0.7.2 and 078 v0.2.1. |
 | 0.1.2 | 2026-10-13 | 4.2.3: the Proof Witness MUST be independent of the Lab and its affiliates; a Lab-operated witness no longer conforms. 4.5 Maintainer and Licensor Independence: disclosure of maintainer, patent-holder, or affiliate relationships, and an unrelated Proof Witness in those Engagements; the specification names, prefers, and requires no operator. Abstract no longer names an operator. Section 14 limited to editorial responsibility; conformance is determined from the records. |
-| 0.1.3 | 2026-10-13 | 13.6: an extension is adopted by a specification revision published for public review, not by the maintainer; the Greater Good License Lineage Node sentence is informative. 13.7: reserved items no longer reserved to the maintainer. |
+| 0.1.3 | 2026-10-13 | 13.6: an extension is adopted by a specification revision published for public review, not by the maintainer; the Proof Protocol License 1.0 Lineage Node sentence is informative. 13.7: reserved items no longer reserved to the maintainer. |
