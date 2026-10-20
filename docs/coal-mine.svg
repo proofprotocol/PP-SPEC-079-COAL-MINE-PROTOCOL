@@ -107,7 +107,7 @@
   <text x="856" y="508" fill="#e6edf3">Witness: Implementor SOC or auditor</text>
   <rect x="1200" y="300" width="340" height="274" rx="6" fill="#161b22" stroke="#79c0ff"/>
   <text x="1370" y="324" fill="#79c0ff" font-weight="bold" text-anchor="middle">Independent Test Lab Mode</text>
-  <text x="1370" y="342" fill="#aab3bd" text-anchor="middle">lab-replica, e.g. HACKERverse</text>
+  <text x="1370" y="342" fill="#aab3bd" text-anchor="middle">lab-replica, e.g. an Independent Test Lab</text>
   <text x="1216" y="364" fill="#e6edf3">built from a Parity Declaration</text>
   <text x="1216" y="380" fill="#e6edf3">or a Reference Environment</text>
   <text x="1216" y="396" fill="#e6edf3">no network path to Implementor</text>
