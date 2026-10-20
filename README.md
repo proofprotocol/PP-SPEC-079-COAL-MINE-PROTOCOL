@@ -4,13 +4,13 @@
 
 > **Ownership and Attribution Notice**
 >
-> The Coal Mine Protocol (PP-SPEC-079) is authored by **Craig Ellrod** (Nebulonium, Inc., dba HACKERverse) and published as part of **Proof Protocol**. Copyright (c) 2026 Nebulonium, Inc.
+> The Coal Mine Protocol (PP-SPEC-079) is authored by **Craig Thomas Ellrod** and published as part of **Proof Protocol**. Copyright (c) 2026 Craig Thomas Ellrod.
 >
-> Any use, implementation, derivative, citation, or incorporation of this work, in whole or in part, MUST attribute **Craig Ellrod, Nebulonium, Inc., and Proof Protocol**. See [NOTICE.md](NOTICE.md).
+> Any use, implementation, derivative, citation, or incorporation of this work, in whole or in part, MUST attribute **Craig Thomas Ellrod and Proof Protocol**. See [NOTICE.md](NOTICE.md).
 >
 > Licensed under the Proof Protocol License 1.0 (see LICENSE.md); text Apache License 2.0 under Part A. Original inventor: Craig Thomas Ellrod (ORCID 0009-0004-1058-7666).
 >
-> **Patents.** Patent terms are in [PATENT-SCHEDULE.md](PATENT-SCHEDULE.md). Claims not listed there are reserved by Craig Ellrod and Nebulonium, Inc. Licensing: 1proofprotocol@gmail.com.
+> **Patents.** Patent terms are in [PATENT-SCHEDULE.md](PATENT-SCHEDULE.md). Claims not listed there are reserved by Craig Thomas Ellrod. Licensing: 1proofprotocol@gmail.com.
 >
 > **Acknowledgements:** Tricia Wang and Jim Schwoebel, for the name "No Bros Jail Mode Protocol"; Josh Waldrep (Pipelabs), for his later receipt-based verification work applying proof concepts to agentic AI. See [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
 
@@ -94,7 +94,7 @@ Proof of Control and Proof of Efficacy are different claims. Proof of Control es
 
 ## Status
 
-Draft, version 0.1.3, 2026-10-13. Maintained by Nebulonium, Inc. as part of Proof Protocol. Builds on PP-SPEC-077 v0.7.2, PP-SPEC-078 v0.2.1, PP-SPEC-013 v1.0, PP-SPEC-006, PP-SPEC-025, PP-SPEC-004.
+Draft, version 0.1.3, 2026-10-13. Maintained by Craig Thomas Ellrod as part of Proof Protocol. Builds on PP-SPEC-077 v0.7.2, PP-SPEC-078 v0.2.1, PP-SPEC-013 v1.0, PP-SPEC-006, PP-SPEC-025, PP-SPEC-004.
 
 Archived on Zenodo: v0.1.3, DOI [10.5281/zenodo.23347697](https://doi.org/10.5281/zenodo.23347697). All versions: [10.5281/zenodo.23325769](https://doi.org/10.5281/zenodo.23325769).
 
@@ -104,5 +104,5 @@ Related: Proof Economy Prior Art Declaration, DOI [10.5281/zenodo.21379780](http
 
 ```
 Ellrod, C. (2026). Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079), v0.1.3.
-Nebulonium, Inc., Proof Protocol. https://doi.org/10.5281/zenodo.23347697
+Craig Thomas Ellrod, Proof Protocol. https://doi.org/10.5281/zenodo.23347697
 ```

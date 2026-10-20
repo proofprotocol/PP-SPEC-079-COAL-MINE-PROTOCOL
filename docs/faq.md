@@ -40,4 +40,4 @@ Declared in advance: it's a molt, prior runs go stale within the record, and the
 Yes. See docs/procurement.md. Claim Findings and 013 failures in an in-situ Production Stream series are independently witnessed and anchored, which is what makes them usable as contractual triggers.
 
 **Can I implement this?**
-Yes, with attribution to Craig Ellrod, Nebulonium, Inc., and Proof Protocol. See NOTICE.md. Patent rights are reserved. No patent license is granted.
+Yes, with attribution to Craig Thomas Ellrod and Proof Protocol. See NOTICE.md. Patent rights are reserved. No patent license is granted.

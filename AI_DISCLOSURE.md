@@ -81,7 +81,7 @@ The following originated with Craig Ellrod and reflect his judgment, experience,
 
 - The diagnosis: that the two legacy models, the vendor-funded independent lab report and the vendor-run proof of concept, are respectively unreal and self-attested, and that neither is proof. This comes from his own career on both sides of those models, including co-authoring the 2007 WAF Test Methodology and the DUT and SUT competitive test method in *Technical Marketing* (2008).
 - The shift: that the vendor product becomes part of the SUT, DUT, CUT, and AUT, and that its performance is measured by the buyer's infrastructure rather than by the vendor or by a lab the vendor pays.
-- The two engagement modes: in the customer's environment (production, pre-production, QA, development), where the product produces its own efficacy telemetry while it operates; and an independent lab such as HACKERverse performing the same motion with no connection to the customer's live environment.
+- The two engagement modes: in the customer's environment (production, pre-production, QA, development), where the product produces its own efficacy telemetry while it operates; and an independent lab performing the same motion with no connection to the customer's live environment.
 - That a vendor-operated test is not proof of performance.
 - The ownership position: sole authorship, a prior license (since superseded by the Proof Protocol License 1.0), patent rights reserved, mandatory attribution.
 - All review, acceptance, rejection, and revision direction.
@@ -112,7 +112,7 @@ Nothing in this file changes the terms in NOTICE.md or LICENSE.md.
 This file will be updated with each release. If a future version contains material drafted without AI assistance, or AI contributions of a different kind, this file will say so.
 
 Craig Ellrod
-Nebulonium, Inc., Proof Protocol
+Craig Thomas Ellrod, Proof Protocol
 2026-10-10
 
 ## 2026-10-19: License and ethics change

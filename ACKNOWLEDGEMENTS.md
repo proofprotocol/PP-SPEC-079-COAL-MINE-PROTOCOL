@@ -1,7 +1,7 @@
 # Acknowledgements
 
 Work: PP-SPEC-079 Proof of Performance Engagement: The Coal Mine Protocol
-Licensor: Nebulonium, Inc., dba HACKERverse (Proof Protocol)
+Licensor: Craig Thomas Ellrod (Proof Protocol)
 
 [ACKNOWLEDGED]
 Name: Tricia Wang
