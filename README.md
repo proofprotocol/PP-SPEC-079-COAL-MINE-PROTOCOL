@@ -8,7 +8,7 @@
 >
 > Any use, implementation, derivative, citation, or incorporation of this work, in whole or in part, MUST attribute **Craig Thomas Ellrod and Proof Protocol**. See [NOTICE.md](NOTICE.md).
 >
-> Licensed under the Proof Protocol License 1.0 (see LICENSE.md); text Apache License 2.0 under Part A. Original inventor: Craig Thomas Ellrod (ORCID 0009-0004-1058-7666).
+> Licensed under the Proof Protocol License 1.1 (see LICENSE.md); text CC BY 4.0 under Part A, which grants no patent rights. Original inventor: Craig Thomas Ellrod (ORCID 0009-0004-1058-7666).
 >
 > **Patents.** Patent terms are in [PATENT-SCHEDULE.md](PATENT-SCHEDULE.md). Claims not listed there are reserved by Craig Thomas Ellrod. Licensing: 1proofprotocol@gmail.com.
 >
@@ -91,10 +91,12 @@ Proof of Control and Proof of Efficacy are different claims. Proof of Control es
 | [CITATION.cff](CITATION.cff) | Citation metadata |
 | [AI_DISCLOSURE.md](AI_DISCLOSURE.md) | What was human-authored and what was AI-drafted |
 | [LICENSE.md](LICENSE.md) | License terms |
+| [LICENSE-CC-BY-4.0.md](LICENSE-CC-BY-4.0.md) | CC BY 4.0, specification text from 0.1.4 |
+| [LICENSE-APACHE-2.0.md](LICENSE-APACHE-2.0.md) | Apache 2.0, versions before 0.1.4 |
 
 ## Status
 
-Draft, version 0.1.3, 2026-10-13. Maintained by Craig Thomas Ellrod as part of Proof Protocol. Builds on PP-SPEC-077 v0.7.2, PP-SPEC-078 v0.2.1, PP-SPEC-013 v1.0, PP-SPEC-006, PP-SPEC-025, PP-SPEC-004.
+Draft, version 0.1.4, 2026-10-23. Maintained by Craig Thomas Ellrod as part of Proof Protocol. Builds on PP-SPEC-077 v0.7.2, PP-SPEC-078 v0.2.1, PP-SPEC-013 v1.0, PP-SPEC-006, PP-SPEC-025, PP-SPEC-004.
 
 Archived on Zenodo: v0.1.3, DOI [10.5281/zenodo.23347697](https://doi.org/10.5281/zenodo.23347697). All versions: [10.5281/zenodo.23325769](https://doi.org/10.5281/zenodo.23325769).
 

@@ -8,7 +8,7 @@
 >
 > Any use, implementation, derivative, citation, or incorporation of this specification, in whole or in part, MUST attribute **Craig Thomas Ellrod and Proof Protocol**. This requirement applies to standards bodies, working groups, consortia, testing laboratories, and commercial implementations.
 >
-> This specification is licensed under the Proof Protocol License 1.0 (see LICENSE.md); text Apache License 2.0 under Part A. Original inventor: Craig Thomas Ellrod (ORCID 0009-0004-1058-7666).
+> This specification is licensed under the Proof Protocol License 1.1 (see LICENSE.md); text CC BY 4.0 under Part A, which grants no patent rights. Original inventor: Craig Thomas Ellrod (ORCID 0009-0004-1058-7666).
 >
 > **Patents.** Patent terms are in [PATENT-SCHEDULE.md](PATENT-SCHEDULE.md). Claims not listed there are reserved by Craig Thomas Ellrod. Licensing: 1proofprotocol@gmail.com.
 >
@@ -17,11 +17,11 @@
 | Field | Value |
 |---|---|
 | Spec ID | PP-SPEC-079 |
-| Version | 0.1.3 (Draft) |
-| Date | 2026-10-13 |
+| Version | 0.1.4 (Draft) |
+| Date | 2026-10-23 |
 | Status | Draft for public record |
 | Maintainer | Craig Thomas Ellrod (Proof Protocol) |
-| Builds on | PP-SPEC-077 v0.7.2 (Dead Canary), PP-SPEC-078 v0.2.1 (Jailed Canary), PP-SPEC-013 v1.0 (Proof of Performance), PP-SPEC-006 (Proof of Efficacy Score), PP-SPEC-025 (Funding Tier Disclosure), PP-SPEC-004 (ProofRegister API) |
+| Builds on | PP-SPEC-077 v0.8.2 (Dead Canary), PP-SPEC-078 v0.2.4 (Jailed Canary), PP-SPEC-081 v0.1.0 (Reproof), PP-SPEC-013 v1.0 (Proof of Performance), PP-SPEC-006 (Proof of Efficacy Score), PP-SPEC-025 (Funding Tier Disclosure), PP-SPEC-004 (ProofRegister API) |
 
 ---
 
@@ -105,6 +105,7 @@ Terms defined in PP-SPEC-077 Section 2 and PP-SPEC-078 Section 2 have the same m
 | PP-SPEC-009 ProofStamp | Certification mark | A ProofStamp for a control under CMP cites its Performance Series |
 | PP-SPEC-004 ProofRegister | Registry API | Every CMP artifact is published there |
 | PP-SPEC-080 Pithead Safety and Acceptance Protocol | What a consumer requires before accepting a Performance Record | CMP produces the record; 080 says whether a given reader takes it. CMP never changes to satisfy a profile |
+| PP-SPEC-081 Reproof | Independent re-execution of a proof: Check and Umpire Assays, Reproof Status | Check and Umpire Engagements are CMP Engagements carrying `reproof_of`; the Performance Record shows its Reproof Status |
 
 CMP does not restate any rule those specifications make. Where CMP states a rule, it binds the Engagement, not the underlying run.
 
@@ -258,6 +259,7 @@ Before the first commitment, the commissioning party MUST publish an Engagement 
 - The Registry or Registries on which the Engagement's records will be registered (9.6.3), and the Holder (9.6.2)
 - The Regulatory Regime set (5.5), `none` stated explicitly
 - Every Extension in use (Section 13), by `x-` identifier with a pointer to its definition
+- For a Check or Umpire Engagement under PP-SPEC-081: `reproof_of`, naming the Head Engagement and the Reproof Manifest Record ID
 - The Authorship Disclosure reference (077 21.15) of every component, the Mine Plan composition, and any Reference Environment
 
 The Engagement Manifest MUST be hashed with the domain tag `"CMP-1:engagement"` and bound to a Time Anchor pulse.
@@ -329,6 +331,7 @@ One Performance Record per Engagement, published to the Registry, containing:
 - DUT and CUT Fingerprints at start and end, and every molt during the Engagement
 - SUT, Corpus, Pigtail, and Component Fingerprints at start and end, every drift event with its type and responsible party, and the resulting segments (7.3.4)
 - The Provider's Right of Reply, if any
+- The record's Reproof Status under PP-SPEC-081 Section 9, as computed from the Registry at the time of rendering, with its scope, the count of independent agreeing checks, and the counts of agreeing, diverging, insufficient, abandoned, and lapsed checks (081 10.4). A record with no registered check shows `single`.
 - A summary that states, in one paragraph, what the record proves and what the Parity Declaration prevents it from proving
 
 ### 9.2. What a Performance Record is not
@@ -365,6 +368,8 @@ A narrative report MAY be written from a Performance Record. It MUST cite the re
 
 9.5.5. **Class and scale.** The class is decided by what was fired and where it landed, never by what the control is called or what it protects. Three WAFs of three provenances tested under the Web Application profile (077 17.3) share a class. An agent guardrail tested under the Agentic AI Controls profile (077 17.9) with PP-SPEC-078 runs in its Mine Plan is in a different class, and its rates MUST NOT be placed beside a WAF's as a ranking. What the two records share is the scale: the same Record ID construction, Outcome list, metric definitions, Absence Ladder, Registry, and Conformance Levels, so one reader with one parser reads both. A WAF in front of an agent's HTTP API, tested with web canaries, is in the Web Application class; the agent behind it does not change that. A control tested under two profiles produces one Performance Record carrying one class per profile, and comparison happens per profile.
 
+9.5.6. **Reproof.** A Check Engagement under PP-SPEC-081 MUST be in the Head Engagement's Comparability Class. An Independent Test Lab Mode Check of an In-Situ Head Engagement is a Class Reproof only (081 5.2). A record's Reproof Status is reported beside its rates wherever they are compared, and a comparison that includes records of different Reproof Status MUST show each record's status.
+
 ### 9.6. Record form and registration
 
 9.6.1. **The Performance Record is a Bundle.** It is a Bundle under PP-SPEC-077 Section 21.7 whose leaves are the Record IDs of every Unit of Proof, booking, finding, fingerprint, Interface Manifest, PP-SPEC-013 measurement record, and Claim Sheet outcome the Engagement produced. It has its own Record ID, Signature Envelope, Registry Receipt, and Disclosure Level under 077 Section 21, and carries its Comparability Class (9.5) as a field, so that any two Bundles can be tested for comparability from their records alone.
@@ -392,6 +397,8 @@ A narrative report MAY be written from a Performance Record. It MUST cite the re
 10.2. **Contract.** An Implementor MAY tie contractual remedies to Claim Findings (077 11.6) and to PP-SPEC-013 Performance Specification failures recorded in an In-Situ Production Stream series, since both are independently witnessed and anchored.
 
 10.3. **Operations.** An In-Situ Production Stream series is a continuous Proof of Performance. An Implementor's security operations function MAY treat silent drift and undeclared molt findings as change-control events.
+
+10.4. **Reproof.** An Implementor MAY require, as a condition of procurement or of contractual remedies under 10.2, that a Performance Record be reproven under PP-SPEC-081, and MAY specify the reproof scope, the number of independent checks, and the Splitting Limits it will accept. A Provider MUST NOT contract with an Implementor or a Lab to prevent a Check Engagement of a Registered Performance Record.
 
 ## 11. Security Considerations
 
@@ -474,3 +481,4 @@ Craig Thomas Ellrod, as maintainer of Proof Protocol, is responsible for the edi
 | 0.1.1 | 2026-10-12 | Shared family problem statement at the top of the Introduction. Flock renamed Proof Swarm, following PP-SPEC-077 v0.7.2. 9.6.9 Authorship Disclosure (077 21.15) for components, compositions, Reference Environments, and reports. 9.6.8 humans and machines (077 21.14). 7.3.4 drift during an Engagement covering every 077 15.1 type with the responsible party for each; Performance Record and Series carry SUT, Corpus, Pigtail, and Component Fingerprints and segments; `fragmented` series state. 5.5 Regulatory Regime (declared, in the Comparability Class, sovereign Registry with cross-anchoring); 9.5.5 class versus scale; Section 13 Extension Policy (extension points, what is not extensible, add never relax, declare or it did not happen, Providers, promotion) binding 077 and 078; 2.1 and 13.7 point consumer requirements at PP-SPEC-080. Generalized from vendor products to controls of any provenance: Provider replaces Vendor as the constrained party (Vendor kept only for the commercial case), Control Provenance recorded, 4.4 Self-Provided Engagements with team separation rules, 9.5.4 provenance never affects comparability, Claim Sheet sources widened to READMEs, design documents, runbooks, and policies. Added the Introduction (why this specification exists, scope, what it is not). 9.6 Record form and registration: the Performance Record and the Performance Series are Bundles under 077 Section 21; Holder is the Buyer or the Independent Lab, never the Provider; Engagement Manifest names accepted Registries and the Holder; an Engagement is complete only at the Registered level; Disclosure Level with public summary; revocation. Builds on 077 v0.7.2 and 078 v0.2.1. |
 | 0.1.2 | 2026-10-13 | 4.2.3: the Proof Witness MUST be independent of the Lab and its affiliates; a Lab-operated witness no longer conforms. 4.5 Maintainer and Licensor Independence: disclosure of maintainer, patent-holder, or affiliate relationships, and an unrelated Proof Witness in those Engagements; the specification names, prefers, and requires no operator. Abstract no longer names an operator. Section 14 limited to editorial responsibility; conformance is determined from the records. |
 | 0.1.3 | 2026-10-13 | 13.6: an extension is adopted by a specification revision published for public review, not by the maintainer; the Proof Protocol License 1.0 Lineage Node sentence is informative. 13.7: reserved items no longer reserved to the maintainer. |
+| 0.1.4 | 2026-10-23 | PP-SPEC-081 Reproof added to 2.1. 7.1 `reproof_of` in the Engagement Manifest. 9.1 Reproof Status with history on every Performance Record. 9.5.6 Check Engagements in the Head's Comparability Class; Lab of In-Situ is Class Reproof. 10.4 Implementors may require reproof; Providers may not contract to prevent it. Licensed under Proof Protocol License 1.1: text CC BY 4.0 from this version; earlier versions remain Apache-2.0. |

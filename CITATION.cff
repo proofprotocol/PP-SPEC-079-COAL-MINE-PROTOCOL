@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use or reference this work, cite it as below and attribute Craig Thomas Ellrod and Proof Protocol (see NOTICE.md)."
 title: "Proof of Performance Engagement: The Coal Mine Protocol (PP-SPEC-079)"
-version: 0.1.3
+version: 0.1.4
 doi: 10.5281/zenodo.23347697
-date-released: 2026-10-13
+date-released: 2026-10-23
 type: standard
 keywords:
   - "proof of performance"
@@ -33,5 +33,5 @@ references:
   - type: generic
     title: "Proof Economy Prior Art Declaration"
     doi: 10.5281/zenodo.21379780
-license: Apache-2.0
+license: CC-BY-4.0
 license-url: "LICENSE.md"
